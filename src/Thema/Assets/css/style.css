@@ -203,18 +203,17 @@ body {
 
 /* No Varben */
 .no-varben-textarea{
-  width: 60vw;
   height: 8vw;
   background: #3AC6AD 0% 0% no-repeat padding-box;
-  border-radius: 60px;
+  border-radius: 6000px;
   opacity: 1;
   margin-right: auto;
   margin-left: auto;
   display: table;
   position:relative;
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-  font-size: 1.5vmax;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  font-size: 1.3vmax;
 
 }
 .no-varben-text{
@@ -227,7 +226,101 @@ body {
 }
 .varben-icon{
   position: absolute;
-  left:-9vmax;
-  top:-8vmax;
-  width: 15vw;
+  left:-7vmax;
+  top:-6vmax;
+  width: 11vw;
+}
+
+/* Footer */
+.footer{
+  height: 150px;
+  padding-right: var(--bs-gutter-x, 15rem);
+  padding-left: var(--bs-gutter-x, 15rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+.varben-text{
+  color:#3AC6AD;
+  font-size: 24px;
+  font-weight: bold;
+ 
+}
+.vertical-center{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+}
+.varben-text-wrapper{
+  display: table;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-list-item{
+  color:#7D7D7D;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+
+
+.se{
+width: 100px;
+height: 40px;
+/* UI Properties */
+background: #3AC6AD 0% 0% no-repeat padding-box;
+border-radius: 0px 20px 20px 0px;
+opacity: 1;
+}
+
+.search-footer-input{
+  width: 90%;
+  background-color: transparent;
+  border:none;
+  padding-left: 20px;
+  color:white;
+  font-size: 2vmin;
+}
+.search-footer-box::placeholder { 
+  color: #7D7D7D;
+  opacity: 0.7; 
+ 
+}
+input.search-footer-box:focus{
+  outline: none;
+ 
+
+}
+.search-footer-container {
+  position: relative;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #D9E6EC;
+  border-radius: 20px;
+  opacity: 1;
+}
+.search-footer-box {
+  background-color: transparent;
+  outline: none;
+  height: 35px;
+  font-size: 15px;
+  border: 0;
+  width: 100%;
+  padding-left: 15px;
+}
+.search-footer-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border:none;
+  outline: 0;
+  width: 25%;
+  height: 35px;
+  /* UI Properties */
+  background: #3AC6AD 0% 0% no-repeat padding-box;
+  border-radius: 0px 20px 20px 0px;
+  opacity: 1;
+  color:white;
 }
