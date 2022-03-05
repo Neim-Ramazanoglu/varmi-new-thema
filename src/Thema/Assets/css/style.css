@@ -128,7 +128,7 @@ body {
 }
 
 .p-card-header {
-    height: 110px;
+    /* height: 110px; */
     display: flex;
     justify-content: center;
   }
@@ -140,14 +140,94 @@ body {
     transform: translateY(50%); /* additional 50% of own height */
   }
   .p-card-body{
-      height: 300px;
+      /* height: 300px; */
       margin-bottom: 100px;
       border-radius: 20px;
       box-shadow: 0px 3px 6px #00000029;
   }
   .left-rating{
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   .right-rating{
     text-align: center;
   }
+
+  .p-card-icons {
+    position: absolute;
+    bottom: 0;
+    /* right: 0; */
+  }
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    
+  }
+  .center { 
+    justify-content: center; 
+  }  
+
+  .flex-item {
+    text-align: center;
+  }
+
+  .p-card-text{
+    text-align: center;
+    font-size: 14px;
+    color:#92929D;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .p-card-gallery{
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom:20px;
+}
+.gallery-item{
+  padding-left:7px;
+  margin-top:7px;
+}
+.p-card-button{
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* No Varben */
+.no-varben-textarea{
+  width: 60vw;
+  height: 8vw;
+  background: #3AC6AD 0% 0% no-repeat padding-box;
+  border-radius: 60px;
+  opacity: 1;
+  margin-right: auto;
+  margin-left: auto;
+  display: table;
+  position:relative;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  font-size: 1.5vmax;
+
+}
+.no-varben-text{
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  display: table-cell;
+  padding-left: 6vw;
+  padding-right: 5vw;
+}
+.varben-icon{
+  position: absolute;
+  left:-9vmax;
+  top:-8vmax;
+  width: 15vw;
+}
