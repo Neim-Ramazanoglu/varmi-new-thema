@@ -1,6 +1,7 @@
 import React from 'react'
 import style from '../../Assets/css/style.css'
 import Category from './Category'
+import ProfileCard from './ProfileCard'
 function Homepage() {
     return (
 
@@ -18,7 +19,7 @@ function Homepage() {
                 </div>
             </div>
             <Category />
-
+            <ProfileCard />
         </div>
     )
 }
