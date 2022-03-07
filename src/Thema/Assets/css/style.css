@@ -99,12 +99,34 @@ margin-top:100px;
 /* category */
 .category{
     display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: no-wrap;
   justify-content: center;
+  overflow-x: auto;
+}
+
+.category::-webkit-scrollbar {
+  height: 0.7vmax;
+  width: 10px;
+}
+
+/* Track */
+.category::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.category::-webkit-scrollbar-thumb {
+  background: #3BC9B0; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.category::-webkit-scrollbar-thumb:hover {
+  background: #21947f; 
 }
 .cetegory-wrapper{
     text-align: center;
-    
 }
 .category-icon-wrapper{
     width: 6vmax;
@@ -113,7 +135,7 @@ margin-top:100px;
     border-radius: 13px;
     opacity: 1;
     margin: 2vmax; 
-    
+   
 }
 .category-icon{
     display: block;
@@ -123,6 +145,7 @@ margin-top:100px;
     vertical-align: middle;
     display: inline-block;
     margin-top: 1.7vmax;
+    
 }
 .category-name{
     width: 8vmax;
@@ -233,7 +256,8 @@ margin-top:100px;
   margin-top: 5vw;
   margin-bottom: 5vw;
   font-size: 1.3vmax;
-
+  margin: 0 auto;
+  width: 60vmax;
 }
 .no-varben-text{
   text-align: center;
@@ -249,15 +273,57 @@ margin-top:100px;
   top:-6vmax;
   width: 11vw;
 }
+@media only screen and (max-width: 600px) {
+  .no-varben-textarea{
+    height: 8vw;
+    background: #3AC6AD 0% 0% no-repeat padding-box;
+    border-radius: 6000px;
+    opacity: 1;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+    position:relative;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 1.3vmax;
+    width: 40vmax;
+  
+  }
+  .no-varben-text{
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 6vw;
+    padding-right: 5vw;
+  }
+  .varben-icon{
+    position: absolute;
+    left:-4vmax;
+    top: -3vmax;
+    width: 14vw;
+  }
+ 
+}
 
 /* Footer */
+@media only screen and (min-width: 992px) {
 .footer{
-  height: 150px;
   padding-right: var(--bs-gutter-x, 15rem);
   padding-left: var(--bs-gutter-x, 15rem);
   margin-right: auto;
   margin-left: auto;
 }
+}
+
+@media only screen and (max-width: 992px) {
+  .footer{
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 1rem);
+  }
+ 
+}
+
 .varben-text{
   color:#3AC6AD;
   font-size: 24px;

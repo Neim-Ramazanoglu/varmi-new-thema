@@ -5,20 +5,20 @@ function Footer() {
     return (
         <div className='footer'>
             <div className="row">
-                <div className="col-2">
+                <div className="col-sm-2 col-6 d-none d-xs-block d-sm-block d-md-block d-lg-block d-xl-block">
                     <img src={logo} />
                 </div>
-                <div className="col-2 offset-5">
+                <div className="col-sm-2 offset-sm-5 col-6 offset-3 ">
                     <span className='varben-text vertical-center'>342,233</span>
                     <span className='text-uppercase ps-2 fw-bold vertical-center' >Varben</span>
                 </div>
-                <div className="col-2 offset-1">
+                <div className="col-sm-2 offset-sm-1 col-6 offset-3">
                     <span className='varben-text vertical-center'>5,342,216</span>
                     <span className='text-uppercase ps-2 fw-bold vertical-center'>Kullanıcı</span>
                 </div>
             </div>
             <div className="row" style={{ marginTop: '1.5vw', height: '350px' }}>
-                <div className="col-3">
+                <div className="col-md-3 col-6">
                     <span>
                         Üst Menü
                     </span>
@@ -40,7 +40,7 @@ function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div className="col-3">
+                <div className="col-md-3 col-6">
                     <span>
                         Diğer Menü
                     </span>
@@ -59,7 +59,7 @@ function Footer() {
                         </li>
                     </ul>
                 </div>
-                <div className="col-6">
+                <div className="col-md-6">
                     <span>
                         Mail Bülteni
                     </span>

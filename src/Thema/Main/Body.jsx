@@ -14,8 +14,7 @@ function Body() {
         <div>
             <Switch>
 
-                <Route path="/" exact> <Homepage />  </Route>
-                <Route path="/home" exact> <Homepage />  </Route>
+                <Route path="/test" exact> <Homepage />  </Route>
 
 
             </Switch>

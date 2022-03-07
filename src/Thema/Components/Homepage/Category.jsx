@@ -134,7 +134,8 @@ function Category() {
             ,
             name: 'Bakım & Güzellik',
             id: '7'
-        }
+        },
+
     ]
     console.log(xid);
     return (
