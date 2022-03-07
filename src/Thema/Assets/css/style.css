@@ -447,4 +447,36 @@ input.search-footer-box:focus{
 
 .eom-offcanvas .eom-hamburger-wrap{
 margin-top: 25px !important;
+
+
 }
+.eom-offcanvas .eom-hamburger-wrap .eom-hamburger:hover span{
+    border-top: 3px solid black;
+}
+.active .eom-hamburger-wrap{
+  background-color: black;
+  border: 3px solid black;
+
+  }
+
+  .active .eom-hamburger-wrap .eom-hamburger:hover span{
+  border-color:  #3AC6AD;
+
+  }
+  .active .eom-hamburger-wrap .eom-hamburger span{
+    border-color:  #3AC6AD;
+  
+    }
+
+  .active .eom-hamburger-wrap:hover {
+    border-color:  #3AC6AD !important;
+
+    }
+    .active .eom-hamburger-wrap {
+      border-color:  #3AC6AD !important;
+  
+      }
+      .eom-offcanvas .eom-hamburger-wrap {
+        border-color:  black !important;
+    
+        }
