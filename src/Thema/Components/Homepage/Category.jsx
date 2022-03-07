@@ -91,7 +91,7 @@ function Category() {
                     </g>
                 </svg>
             ,
-            name: 'Araba Temziliği',
+            name: 'Araba Temizliği',
             id: '5'
         },
         {

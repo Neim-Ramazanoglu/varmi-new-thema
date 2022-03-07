@@ -54,8 +54,8 @@ function ProfileCard() {
                                     <img className='flex-item' style={{ bottom: '0', position: 'absolute', right: '0' }} src={certificate} />
                                 </div>
                                 <div className="col-4 offset-1 right-rating" style={{ marginTop: '1vmax' }}>
-                                    <img src={location} className='mb-1' />
-                                    <span className='text-uppercase ms-1' style={{ color: '#3ac6ad', fontSize: '19px', fontWeight: 'bold' }}>620mt</span>
+                                    <img src={location} className='mb-1' width='8vw' />
+                                    <span className='text-uppercase ' style={{ color: '#3ac6ad', fontSize: '1.2vmax', fontWeight: 'bold' }}> 620mt</span>
 
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ function ProfileCard() {
 
 
                             <div className="row">
-                                <button type="button" className="btn btn-success col-8 offset-2" style={{ borderRadius: '10px', backgroundColor: '#3AC6AD', marginBottom: '20px', border: 'none', height: '2.5vmax' }}>Mesaj At</button>
+                                <button type="button" className="btn btn-success col-8 offset-2" style={{ borderRadius: '10px', backgroundColor: '#3AC6AD', marginBottom: '20px', border: 'none' }}>Mesaj At</button>
                             </div>
                         </div>
                     </div>
