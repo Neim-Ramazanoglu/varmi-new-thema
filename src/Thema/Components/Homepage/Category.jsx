@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, Navigation } from "swiper/react";
+import SwiperCore, { Autoplay, Navigation } from "swiper";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
+import den from '../../Assets/png/auto-repair.svg'
+import { useRef } from "react";
+
 function Category() {
     const [xid, setXid] = useState("")
+    SwiperCore.use([Autoplay])
+
+    const swiperRef = React.useRef(null);
 
     const List = [
         {
@@ -141,10 +147,11 @@ function Category() {
 
 
     ]
-    console.log(xid);
+
     return (
         <div>
             <Swiper
+                ref={swiperRef}
                 breakpoints={{
                     320: {
                         width: 300,
@@ -176,10 +183,7 @@ function Category() {
                     disableOnInteraction: false,
                 }}
                 loop={true}
-                navigation={{
-                    prevEl: ".custom_prev_ct1",
-                    nextEl: ".custom_next_ct1",
-                }}
+
                 className="category"
             >
                 {List.map((category, index) => (
@@ -194,8 +198,10 @@ function Category() {
                             <div className='category-name' style={category.id === xid ? { cursor: 'pointer', color: '#36C1A7' } : { cursor: 'pointer', color: '#7D7D7D' }} id={category.id} onClick={e => setXid(e.target.id)}>{category.name}</div>
                         </div>
                     </SwiperSlide>
-
                 ))}
+                <div className='swiper-button-prev pe-4' style={{ color: '#3BC9B0' }} onClick={() => swiperRef.current.swiper.slidePrev()} />
+                <div className='swiper-button-next ps-4' style={{ color: '#3BC9B0' }} onClick={() => swiperRef.current.swiper.slideNext()} />
+
             </Swiper>
 
 

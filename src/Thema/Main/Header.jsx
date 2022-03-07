@@ -36,10 +36,10 @@ function Header({ location }) {
             </div>
 
 
-            <div className='col-xs-3 col-md-4 col-lg-3 col-xl-3 content2'>
+            <div className='col-xs-4 col-md-4 col-lg-4 col-xl-3 content2'>
                 <span href="#" style={{ display: 'inline-block', overflow: 'hidden', whiteSpace: 'nowrap' }}>
                     <img src={require('../Assets/png/archive.png')} style={{ height: '22.5px', width: '27.5px' }} />
-                    <span style={{ marginLeft: '0.78vw', fontSize: '13px', color: '#21947f', display: 'inline-block', backgroundColor: 'white', borderRadius: '5px', padding: '5px', cursor: 'pointer' }}>
+                    <span style={{ marginLeft: '0.78vw', fontSize: '13px', color: '#21947f', display: 'inline-block', backgroundColor: 'white', borderRadius: '1rem', padding: '0.5rem 1rem', cursor: 'pointer' }}>
                         Hizmet İlanı Oluştur
                     </span>
                 </span>
@@ -61,7 +61,7 @@ function Header({ location }) {
             {/* <button className={"navbar-toggler " + (toggle === true ? 'collapsed' : '')} onClick={() => { setToggle(!toggle) }} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={(toggle === true ? 'true' : 'false')} aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button> */}
-            <div className={"col-lg-4 col-xl-5 justify-content-center collapse navbar-collapse " + (toggle === true ? 'show' : '')} id="navbarSupportedContent" >
+            <div className={"col-lg-3 col-xl-3 justify-content-center collapse navbar-collapse " + (toggle === true ? 'show' : '')} id="navbarSupportedContent" >
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item" >
                         <a className="nav-link text-uppercase" href="#">ana sayfa</a>
@@ -76,7 +76,7 @@ function Header({ location }) {
                         <a className="nav-link text-uppercase" href="#">varmı nedir?</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-uppercase" href="#">kategoriler</a>
+                        <a className="nav-link text-uppercase d-none d-xxl-block" href="#">kategoriler</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link text-uppercase d-none d-xxl-block" href="#" >arama</a>
@@ -86,10 +86,12 @@ function Header({ location }) {
                     </li>
                 </ul>
             </div>
-            <div className="d-none d-xl-block col-2" >
+            <div className="d-none d-xl-block col-xl-3 col-2" >
                 <div className="float-end">
                     <button type="button" className="button " >Türkçe</button>
                     <button type="button" className="button  ms-3 me-3" >English</button>
+                    <button type="button" className="button me-3" >Giriş Yap</button>
+
                 </div>
 
             </div>
