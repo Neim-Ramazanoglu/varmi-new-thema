@@ -1,17 +1,39 @@
 import React, { useState } from 'react'
 import styles from '../Assets/css/style.css'
-
-function Header() {
+import { Link, withRouter } from 'react-router-dom';
+import OffcanvasMenu from 'react-offcanvas-menu-component';
+function Header({ location }) {
 
 
     const [toggle, setToggle] = useState(false)
     return (
         <nav className=" navbar navbar-expand-lg navbar-light topbar " style={{ height: '102px' }}>
+            <div className='of col-xs-1'>
+                <OffcanvasMenu
+                    Link={Link}
+                    location={location}
+                    config={{
+                        push: false
+                    }}
+                    menu={[
+                        { text: 'Ana Sayfa', link: '/' },
+                        { text: 'Mesjalar', link: '/1' },
+                        { text: 'Profil', link: '/2' },
+                        { text: 'Varmı Nedir?', link: '/3' },
+                        { text: 'Kategoriler', link: '/4' },
+                        { text: 'Arama', link: '/5' },
+                        { text: 'Bize Ulaşın', link: '/6' },
+                    ]}
+                    header={ // you can add logo to the header for example
+                        <img src={require('../Assets/png/varmı-logo.png')} />
+                    }
+                />
+
+            </div>
 
             <div className="col-xs-3 col-lg-1 col-xl-1 me-5" style={{ marginLeft: '3.5%' }}>
                 <img src={require('../Assets/png/varmı-logo.png')} />
             </div>
-
 
 
             <div className='col-xs-3 col-md-4 col-lg-3 col-xl-3 content2'>
@@ -36,9 +58,9 @@ function Header() {
                     </svg>
                 </a>
             </div>
-            <button className={"navbar-toggler " + (toggle === true ? 'collapsed' : '')} onClick={() => { setToggle(!toggle) }} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={(toggle === true ? 'true' : 'false')} aria-label="Toggle navigation">
+            {/* <button className={"navbar-toggler " + (toggle === true ? 'collapsed' : '')} onClick={() => { setToggle(!toggle) }} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={(toggle === true ? 'true' : 'false')} aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
-            </button>
+            </button> */}
             <div className={"col-lg-4 col-xl-5 justify-content-center collapse navbar-collapse " + (toggle === true ? 'show' : '')} id="navbarSupportedContent" >
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item" >
