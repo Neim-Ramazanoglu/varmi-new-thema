@@ -62,7 +62,7 @@ function ProfileCard() {
                             <div className="row">
                                 <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>
                                     <span style={{ color: '#92929D', fontSize: '11px' }}>Cevaplama Hızı</span><br />
-                                    <span style={{ color: '#92929D', fontSize: '10px', fontWeight: 'bold' }}>10 dk</span>
+                                    <span style={{ color: '#f5d757', fontSize: '10px', fontWeight: 'bold' }}>10 dk</span>
                                 </div>
                                 <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>
                                     <span style={{ color: 'black', fontSize: '20px', fontWeight: 'bold' }}>Mehmet</span><br />
@@ -70,8 +70,8 @@ function ProfileCard() {
                                     <span style={{ color: '#92929D', fontSize: '12px', fontWeight: '' }}>Taşıma&Kurye</span>
                                 </div>
                                 <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>
-                                    <span style={{ color: '#92929D', fontSize: '11px' }}>İş Tamamlama Oranı</span><br />
-                                    <span style={{ color: '#92929D', fontSize: '10px', fontWeight: 'bold' }}>%94</span>
+                                    <span style={{ color: '#92929D', fontSize: '11px' }}>İş Bitirme Oranı</span><br />
+                                    <span style={{ color: '#f5d757', fontSize: '10px', fontWeight: 'bold' }}>%94</span>
                                 </div>
                             </div>
 
