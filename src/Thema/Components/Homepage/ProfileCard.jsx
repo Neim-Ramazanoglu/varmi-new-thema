@@ -76,21 +76,14 @@ function ProfileCard() {
                             </div>
 
 
-                            <div className="p-card-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <div className="p-card-text line-clamp" >
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
                             </div>
-                            <div className="p-card-gallery">
-                                <img className='col-3 gallery-item' src={require('../../Assets/png/Image 1.png')} />
-                                <img className='col-3 gallery-item' src={require('../../Assets/png/Image 2.png')} />
-                                <img className='col-3 gallery-item' src={require('../../Assets/png/Image 3.png')} />
-                                <img className='col-3 gallery-item' src={require('../../Assets/png/Image 4.png')} />
-                                <img className='col-3 gallery-item' src={require('../../Assets/png/Image 5.png')} />
-                                <img className='col-3 gallery-item' src={require('../../Assets/png/Image 6.png')} />
-                                <img className='col-3 gallery-item' src={require('../../Assets/png/Image 7.png')} />
-                                <img className='col-3 gallery-item' src={require('../../Assets/png/Image 8.png')} />
-                            </div>
+
 
                             <div className="row">
                                 <button type="button" className="btn btn-success col-8 offset-2" style={{ borderRadius: '10px', backgroundColor: '#3AC6AD', marginBottom: '20px', border: 'none', height: '2.5vmax' }}>Mesaj At</button>
