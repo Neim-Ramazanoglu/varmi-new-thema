@@ -6,6 +6,7 @@ import payment from '../../Assets/png/payment.svg'
 import verify from '../../Assets/png/verified.svg'
 import certificate from '../../Assets/png/certificate.svg'
 import truck from '../../Assets/png/truck.svg'
+import message from '../../Assets/png/message-svgrepo-com.svg'
 function ProfileCard() {
     const List = [
         {
@@ -54,7 +55,7 @@ function ProfileCard() {
                                     <img className='flex-item' style={{ bottom: '0', position: 'absolute', right: '0' }} src={certificate} />
                                 </div>
                                 <div className="col-4 offset-1 right-rating" style={{ marginTop: '1vmax' }}>
-                                    <img src={location} className='mb-1' width='8vw' />
+                                    <img src={location} className='mb-1' /><br />
                                     <span className='text-uppercase ' style={{ color: '#3ac6ad', fontSize: '1.2vmax', fontWeight: 'bold' }}> 620mt</span>
 
                                 </div>
@@ -62,7 +63,7 @@ function ProfileCard() {
                             <div className="row">
                                 <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>
                                     <span style={{ color: '#92929D', fontSize: '11px' }}>Cevaplama Hızı</span><br />
-                                    <span style={{ color: '#f5d757', fontSize: '10px', fontWeight: 'bold' }}>10 dk</span>
+                                    <span style={{ color: '#f5d757', fontSize: '16px', fontWeight: 'bold' }}>10 dk</span>
                                 </div>
                                 <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>
                                     <span style={{ color: 'black', fontSize: '20px', fontWeight: 'bold' }}>Mehmet</span><br />
@@ -71,7 +72,7 @@ function ProfileCard() {
                                 </div>
                                 <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>
                                     <span style={{ color: '#92929D', fontSize: '11px' }}>İş Bitirme Oranı</span><br />
-                                    <span style={{ color: '#f5d757', fontSize: '10px', fontWeight: 'bold' }}>%94</span>
+                                    <span style={{ color: '#f5d757', fontSize: '16px', fontWeight: 'bold' }}>%94</span>
                                 </div>
                             </div>
 
@@ -86,7 +87,10 @@ function ProfileCard() {
 
 
                             <div className="row">
-                                <button type="button" className="btn btn-success col-8 offset-2" style={{ borderRadius: '10px', backgroundColor: '#3AC6AD', marginBottom: '20px', border: 'none' }}>Mesaj At</button>
+                                <button type="button" className="btn btn-success col-8 offset-2" style={{ borderRadius: '10px', backgroundColor: '#3AC6AD', marginBottom: '20px', border: 'none' }}>
+                                    <img src={message} className='me-2' style={{ marginBottom: '2px' }} />
+                                    Mesaj At
+                                </button>
                             </div>
                         </div>
                     </div>

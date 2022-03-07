@@ -39,7 +39,7 @@ function Header({ location }) {
             <div className='col-xs-3 col-md-4 col-lg-3 col-xl-3 content2'>
                 <span href="#" style={{ display: 'inline-block', overflow: 'hidden', whiteSpace: 'nowrap' }}>
                     <img src={require('../Assets/png/archive.png')} style={{ height: '22.5px', width: '27.5px' }} />
-                    <span style={{ marginLeft: '0.78vw', fontSize: '13px', color: 'white', display: 'inline-block' }}>
+                    <span style={{ marginLeft: '0.78vw', fontSize: '13px', color: '#21947f', display: 'inline-block', backgroundColor: 'white', borderRadius: '5px', padding: '5px', cursor: 'pointer' }}>
                         Hizmet İlanı Oluştur
                     </span>
                 </span>
