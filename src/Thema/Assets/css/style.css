@@ -72,13 +72,14 @@ margin-top:100px;
 }
 .search-box{
     margin-top: 57px;
-    width: 27%;
-    height: 3.64%;
+    width: 75%;
+    height: 3.5vmax;
     background: #3BC9B0 0% 0% no-repeat padding-box;
     border: 1px solid #FFFFFF;
     border-radius: 35px;
     opacity: 1;
-    padding: 0.95% 1.05%;
+    padding: 0.7vmax 0.7vmax;
+    display: table;
 }
 .search-input{
     width: 90%;
@@ -87,6 +88,8 @@ margin-top:100px;
     padding-left: 20px;
     color:white;
     font-size: 2vmin;
+    display: table-cell;
+vertical-align: middle;
 }
 ::placeholder { 
     color: white;
@@ -408,4 +411,8 @@ input.search-footer-box:focus{
   border-radius: 0px 20px 20px 0px;
   opacity: 1;
   color:white;
+}
+
+.eom-offcanvas .eom-hamburger-wrap{
+margin-top: 25px !important;
 }

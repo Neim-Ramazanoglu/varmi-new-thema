@@ -7,13 +7,13 @@ function Header({ location }) {
 
     const [toggle, setToggle] = useState(false)
     return (
-        <nav className=" navbar navbar-expand-lg navbar-light topbar " style={{ height: '102px' }}>
+        <nav className=" navbar sticky-top navbar-expand-lg navbar-light topbar " style={{ height: '102px' }}>
             <div className='of col-xs-1'>
                 <OffcanvasMenu
                     Link={Link}
                     location={location}
                     config={{
-                        push: false
+                        push: false,
                     }}
                     menu={[
                         { text: 'Ana Sayfa', link: '/' },
