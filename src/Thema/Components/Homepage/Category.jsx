@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay, Navigation } from "swiper/react";
+import "swiper/css/bundle";
+import "swiper/css/pagination";
 function Category() {
     const [xid, setXid] = useState("")
 
     const List = [
         {
             icon:
-                <svg data-name="Group 8" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="2.8vmax" height="2.8vmax" viewBox="0 0 58.773 58.911">
+                <svg data-name="Group 8" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="58.773" height="58.911" viewBox="0 0 58.773 58.911">
                     <defs>
                         <clipPath >
                             <rect data-name="Rectangle 4" width="58.773" height="58.911" fill="none" />
@@ -22,7 +25,7 @@ function Category() {
         },
         {
             icon:
-                <svg xmlns="http://www.w3.org/2000/svg" width="2.8vmax" height="2.8vmax" viewBox="0 0 52.501 56.538">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52.501" height="56.538" viewBox="0 0 52.501 56.538">
                     <g transform="translate(-4.499 -2.25)">
                         <path data-name="Path 13" d="M34.615,24.288H22.5V20.25H34.615Z" transform="translate(14.308 14.308)" />
                         <path data-name="Path 14" d="M39.115,33.288H27V29.25H39.115Z" transform="translate(17.885 21.461)" />
@@ -37,7 +40,7 @@ function Category() {
         },
         {
             icon:
-                <svg data-name="Group 10" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="2.8vmax" height="2.8vmax" viewBox="0 0 53.971 54.008">
+                <svg data-name="Group 10" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="53.971" height="54.008" viewBox="0 0 53.971 54.008">
                     <defs>
                         <clipPath >
                             <rect data-name="Rectangle 5" width="53.971" height="54.008" fill="none" />
@@ -54,7 +57,7 @@ function Category() {
         },
         {
             icon:
-                <svg data-name="Group 12" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="3.48vmax" height="3.15vmax" viewBox="0 0 67.54 60.691">
+                <svg data-name="Group 12" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="67.54" height="60.691" viewBox="0 0 67.54 60.691">
                     <defs>
                         <clipPath >
                             <rect data-name="Rectangle 6" width="67.54" height="60.691" fill="none" />
@@ -70,7 +73,7 @@ function Category() {
         },
         {
             icon:
-                <svg data-name="Group 14" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="3.8vmax" height="2.6vmax" viewBox="0 0 73.877 50.793">
+                <svg data-name="Group 14" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="73.877" height="50.793" viewBox="0 0 73.877 50.793">
                     <defs>
                         <clipPath >
                             <rect data-name="Rectangle 7" width="73.877" height="50.793" fill="none" />
@@ -96,7 +99,7 @@ function Category() {
         },
         {
             icon:
-                <svg data-name="Group 16" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="3.7vmax" height="2.73vmax" viewBox="0 0 70.74 52.515">
+                <svg data-name="Group 16" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="70.74" height="52.515" viewBox="0 0 70.74 52.515">
                     <defs>
                         <clipPath id="clip-path">
                             <rect id="Rectangle_8" data-name="Rectangle 8" width="70.74" height="52.515" />
@@ -117,7 +120,7 @@ function Category() {
         },
         {
             icon:
-                <svg data-name="Group 18" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1.6vmax" height="3.3vmax" viewBox="0 0 30.907 71.843">
+                <svg data-name="Group 18" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="30.907" height="71.843" viewBox="0 0 30.907 71.843">
                     <defs>
                         <clipPath >
                             <rect data-name="Rectangle 9" width="30.907" height="71.843" fill="none" />
@@ -136,22 +139,64 @@ function Category() {
             id: '7'
         },
 
+
     ]
     console.log(xid);
     return (
         <div>
-            <div className="category ">
+            <Swiper
+                breakpoints={{
+                    320: {
+                        width: 300,
+                        slidesPerView: 2,
+                    },
+                    500: {
+                        width: 545,
+                        slidesPerView: 2,
+                    },
+
+                    640: {
+                        width: 640,
+                        slidesPerView: 3,
+                    },
+
+                    768: {
+                        width: 700,
+                        slidesPerView: 4,
+                    },
+
+                    1400: {
+                        width: 1200,
+                        slidesPerView: 7
+                    }
+                }}
+                spaceBetween={0}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                loop={true}
+                navigation={{
+                    prevEl: ".custom_prev_ct1",
+                    nextEl: ".custom_next_ct1",
+                }}
+                className="category"
+            >
                 {List.map((category, index) => (
-                    <div className="cetegory-wrapper" key={index} >
-                        <div className="category-icon-wrapper" style={category.id === xid ? { background: 'white', boxShadow: '5px 5px 50px 3px rgba(0,0,0,0.18)' } : { fill: '#EBEBEB' }} >
-                            <div className="category-icon">
-                                <div style={category.id === xid ? { fill: '#36C1A7' } : { fill: 'black' }} >{category.icon}</div>
+                    <SwiperSlide>
+
+                        <div className="cetegory-wrapper" key={index} >
+                            <div className="category-icon-wrapper" style={category.id === xid ? { background: 'white', boxShadow: '5px 5px 50px 3px rgba(0,0,0,0.18)' } : { fill: '#EBEBEB' }} >
+                                <div className="category-icon">
+                                    <div style={category.id === xid ? { fill: '#36C1A7' } : { fill: 'black' }} >{category.icon}</div>
+                                </div>
                             </div>
+                            <div className='category-name' style={category.id === xid ? { cursor: 'pointer', color: '#36C1A7' } : { cursor: 'pointer', color: '#7D7D7D' }} id={category.id} onClick={e => setXid(e.target.id)}>{category.name}</div>
                         </div>
-                        <div className='category-name' style={category.id === xid ? { cursor: 'pointer', color: '#36C1A7' } : { cursor: 'pointer', color: '#7D7D7D' }} id={category.id} onClick={e => setXid(e.target.id)}>{category.name}</div>
-                    </div>
+                    </SwiperSlide>
+
                 ))}
-            </div>
+            </Swiper>
 
 
         </div>

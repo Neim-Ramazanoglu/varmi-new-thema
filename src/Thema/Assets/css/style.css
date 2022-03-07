@@ -101,7 +101,7 @@ vertical-align: middle;
 
 /* category */
 .category{
-    display: flex;
+  display: flex;
   flex-wrap: no-wrap;
   justify-content: center;
   overflow-x: auto;
@@ -130,10 +130,11 @@ vertical-align: middle;
 }
 .cetegory-wrapper{
     text-align: center;
+    display: table;
 }
 .category-icon-wrapper{
-    width: 6vmax;
-    height: 6vmax;
+    width: 100px;
+    height: 100px;
     background: #EBEBEB 0% 0% no-repeat padding-box;
     border-radius: 13px;
     opacity: 1;
@@ -144,18 +145,46 @@ vertical-align: middle;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
     vertical-align: middle;
     display: inline-block;
-    margin-top: 1.7vmax;
     
+margin-top: 25%;    
 }
 .category-name{
     width: 8vmax;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1vmax;
+    font-size: 15px;
+    display: table;
+    margin: 0 auto;
 }
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+
+
 
 /* profile card */
 .profile-card {
@@ -163,7 +192,7 @@ vertical-align: middle;
 }
 
 .p-card-header {
-    /* height: 110px; */
+     height: 0px; 
     display: flex;
     justify-content: center;
   }
@@ -171,7 +200,8 @@ vertical-align: middle;
   .p-card-img {
     align-self: flex-end;
     border-radius: 50%;
-    width: 100px; height: 100px;
+    width: 100px; 
+    height: 100px;
     transform: translateY(50%); /* additional 50% of own height */
   }
   .p-card-body{
@@ -248,7 +278,7 @@ vertical-align: middle;
 
 /* No Varben */
 .no-varben-textarea{
-  height: 8vw;
+  height: 7vw;
   background: #3AC6AD 0% 0% no-repeat padding-box;
   border-radius: 6000px;
   opacity: 1;
@@ -272,9 +302,9 @@ vertical-align: middle;
 }
 .varben-icon{
   position: absolute;
-  left:-7vmax;
-  top:-6vmax;
-  width: 11vw;
+  left:-5vmax;
+  top:-4vmax;
+  width: 9vw;
 }
 @media only screen and (max-width: 600px) {
   .no-varben-textarea{

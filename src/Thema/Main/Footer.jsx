@@ -86,7 +86,7 @@ function Footer() {
                 </div>
             </div>
             <div style={{ borderBottom: '2px solid #7D7D7D', opacity: '0.3' }}></div>
-            <div className='row' style={{ height: '15vw', marginTop: '1vw' }}>
+            <div className='row' style={{ height: '5vw', marginTop: '1vw' }}>
                 <div className="col-6" style={{ color: '#7D7D7D' }}>
                     © 2022 <span style={{ color: '#3AC6AD' }}>Varmı Ticaret A.Ş.</span> - Her Hakkı Saklıdır
                 </div>
