@@ -5,7 +5,7 @@ import Body from './Main/Body'
 import Footer from './Main/Footer';
 import Header from './Main/Header'
 function Index() {
-    const [state, setState] = useState("0")
+    const [state, setState] = useState("1")
     return (
 
         <div>

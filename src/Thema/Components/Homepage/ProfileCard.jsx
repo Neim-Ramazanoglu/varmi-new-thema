@@ -1,12 +1,12 @@
 import React from 'react'
-import stars from '../../Assets/png/stars.svg'
-import icons from '../../Assets/png/Group-105.svg'
-import location from '../../Assets/png/location.svg'
-import payment from '../../Assets/png/payment.svg'
-import verify from '../../Assets/png/verified.svg'
-import certificate from '../../Assets/png/certificate.svg'
-import truck from '../../Assets/png/truck.svg'
-import message from '../../Assets/png/message-svgrepo-com.svg'
+import stars from '../../Assets/svg/stars.svg'
+import icons from '../../Assets/svg/Group-105.svg'
+import location from '../../Assets/svg/location.svg'
+import payment from '../../Assets/svg/payment.svg'
+import verify from '../../Assets/svg/verified.svg'
+import certificate from '../../Assets/svg/certificate.svg'
+import truck from '../../Assets/svg/truck.svg'
+import message from '../../Assets/svg/message-svgrepo-com.svg'
 function ProfileCard() {
     const List = [
         {

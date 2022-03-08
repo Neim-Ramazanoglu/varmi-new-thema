@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation } from "swiper";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
-import den from '../../Assets/png/auto-repair.svg'
+import den from '../../Assets/svg/auto-repair.svg'
 import { useRef } from "react";
 
 function Category() {
