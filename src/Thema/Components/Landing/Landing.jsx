@@ -39,16 +39,17 @@ function Landing() {
                         alıştığımız hizmetlerin yanısıra VARMI daha da ileri giderek hayatlarımızda ki birçok detaya dokunabiliyor.
 
                     </div>
-                    <div style={{ marginTop: '3vmax', color: '#33bea4' }}>
+                    <div style={{ marginTop: '2vmax', color: '#33bea4' }}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="13.282" height="15.772" viewBox="0 0 13.282 15.772">
                             <path id="Path" d="M13.109,7.574.509.047a.326.326,0,0,0-.34,0A.362.362,0,0,0,0,.359V15.413a.362.362,0,0,0,.169.31.326.326,0,0,0,.34,0L13.109,8.2a.368.368,0,0,0,0-.624Z" transform="translate(0 0)" fill="#33bea4" />
                         </svg>&nbsp;
                         <span>Tanıtım Filmini İzle</span>
                     </div>
                 </div>
-                <img src={require('../../Assets/png/Group 161.png')} style={{ width: '27vmax', marginRight: '3vmax' }} />
+                <img src={require('../../Assets/png/Group 161.png')} style={{ width: '27vmax', marginRight: '3vmax', marginTop: '3vmax' }} />
             </div>
             <LandingCard />
+            <img src={require('../../Assets/png/varb999e.png')} style={{ float: 'right', width: '25vmax', marginTop: '30vmax' }} />
         </div >
     )
 }
