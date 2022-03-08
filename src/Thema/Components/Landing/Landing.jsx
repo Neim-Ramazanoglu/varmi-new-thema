@@ -1,5 +1,6 @@
 import React from 'react'
 import LandingCard from './LandingCard'
+import PaymentSteps from './PaymentSteps'
 
 function Landing() {
     return (
@@ -27,7 +28,7 @@ function Landing() {
                     <div style={{ fontWeight: 'bold', fontSize: '28px' }}>
                         VARMI hayatınıza ne katar?
                     </div>
-                    <div style={{ marginTop: '4vmax', width: '40vmax', lineHeight: '2.2vmax', fontSize: '18px' }}>
+                    <div className='card-sub-text col-lg-8 col-12'>
                         Şehirlerde birbirimize çok yakın mesafelerde yaşıyoruz değil mi ama yine de birbirimizi tanımıyoruz…
                         Halbuki hepimizin birbirimize fayda sağlayacağımız yeteneklerimiz ya da imkanlarımız var ancak
                         duvarlar ardında saklı kalmış beceriler bunlar. Ve ihtiyaçlarımızı karşılayarak hayatımıza konfor katabilecek
@@ -39,17 +40,20 @@ function Landing() {
                         alıştığımız hizmetlerin yanısıra VARMI daha da ileri giderek hayatlarımızda ki birçok detaya dokunabiliyor.
 
                     </div>
-                    <div style={{ marginTop: '2vmax', color: '#33bea4' }}>
+                    <div className='watch-text' >
                         <svg xmlns="http://www.w3.org/2000/svg" width="13.282" height="15.772" viewBox="0 0 13.282 15.772">
                             <path id="Path" d="M13.109,7.574.509.047a.326.326,0,0,0-.34,0A.362.362,0,0,0,0,.359V15.413a.362.362,0,0,0,.169.31.326.326,0,0,0,.34,0L13.109,8.2a.368.368,0,0,0,0-.624Z" transform="translate(0 0)" fill="#33bea4" />
                         </svg>&nbsp;
                         <span>Tanıtım Filmini İzle</span>
                     </div>
                 </div>
-                <img src={require('../../Assets/png/Group 161.png')} style={{ width: '27vmax', marginRight: '3vmax', marginTop: '3vmax' }} />
+                <div className='col-lg-4 col-12 d-none d-lg-block'>
+                    <img src={require('../../Assets/png/Group 161.png')} className='card-phone-img ' />
+                </div>
             </div>
             <LandingCard />
             <img src={require('../../Assets/png/varb999e.png')} style={{ float: 'right', width: '25vmax', marginTop: '30vmax' }} />
+            <PaymentSteps />
         </div >
     )
 }
