@@ -495,6 +495,9 @@ margin-top: 25px !important;
   margin-right: 1vmax !important;
   padding: 5px 30px !important;
  }
+ .search-wrapper{
+   margin-top: 23vmax;
+ }
  .landing-search{
   width: 65%;
   height: 8vmax;
@@ -537,7 +540,66 @@ input:focus{
   position: absolute;
   width: 60vmax;
 }
-
+@media only screen and (max-width: 600px) {
+  .oval-bg{
+    margin-top:-60vmax;
+    margin-left:-60vmax;
+    z-index:-999;
+    position: absolute;
+    width: 90vmax;
+  }
+  .elipse-bg{
+    z-index:-999;
+    position: absolute;
+    width: 50vmax;
+  }
+  .varmı-logo{
+    margin-left: 1vmax;
+    width: 7vmax;
+    height: 3vmax;
+   }
+   .sign-button{
+    background-color: #3AC6AD !important; 
+    border: none !important;
+    margin-right: 1vmax !important;
+    padding: 3px 15px !important;
+    font-size: 12px !important;
+   }
+   .landing-search{
+    width: 68%;
+    height: 5vmax;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #62D6C4;
+    border-radius: 10px;
+    opacity: 1;
+    padding: 0.7vmax 0.7vmax;
+    display: table;
+   }
+   .landing-search-input{
+     width: 90%;
+     height: 100%;  
+     display: flex; 
+     display: table-cell;
+     vertical-align: middle;
+     background-color: transparent;
+    border:none;
+    padding-left: 20px;
+    font-size: 2vw;
+    color: #3BC9B0;
+   }
+  .landing-search-input::placeholder { 
+    color: #3BC9B0;
+    opacity: 0.7; 
+    font-size: 2vw;
+  }
+  input:focus{
+    outline: none;
+  }
+  .search-wrapper{
+    margin-top: 18vmax;
+  }
+}
+/* Landing Card */
 .green-card{
   background-color: #33bea4;
   z-index: -55;
@@ -545,6 +607,14 @@ input:focus{
   margin-top: -5vmax; 
   border-radius: 0 0 50% / 15% 0;
   padding-bottom: 10vmax;
+}
+.yellow-mask{
+  z-index: -10;
+  position: absolute;
+  width: 20vmax;
+  height: 5vmax;
+  float: right;
+  margin-left: 80vmax;
 }
 .landing-card{
 background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -570,6 +640,66 @@ margin-bottom:10px;
   color: #33bea4;
   font-size: 0.7vmax;
 }
+.payment-svg{
+  width: 50vmax;
+  height: 40vmax;
+}
+.payment-steps{
+  margin-top:60vmax;
+  width: 500px;
+  height: 50vmax;
+  margin-left: 25%;
+}
+.landing-text{
+  margin-left: 10vmax;
+  margin-top: 4vmax;
+}
+
+@media only screen and (max-width: 600px) {
+  .green-card{
+    background-color: #33bea4;
+    z-index: -55;
+    position: absolute;
+    margin-top: -5vmax; 
+    border-radius: 0 0 50% / 3% 0;
+    padding-bottom: 10vmax;
+  }
+  .yellow-mask{
+    z-index: -10;
+    position: absolute;
+    width: 20vmax;
+    height: 5vmax;
+    float: right;
+    margin-left: 30vmax;
+  }
+  .payment-svg{
+    width: 47vmax;
+    height: 40vmax;
+  }
+  .payment-steps{
+    margin-top:270vmax;
+    width: 500px;
+    height: 50vmax;
+    margin-left: 5%;
+  }
+  .green-card-text{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btn-outline-light{
+    margin-left: 35%;
+  }
+  .card-sub-text{
+    margin-top: 4vmax ;
+    line-height: 2.2vmax;
+    font-size: 0.8vmax;
+  }
+  .landing-text{
+    margin-left: 5vmax;
+    margin-right: 5vmax;
+    margin-top: 4vmax;
+  }
+}
 @media only screen and (max-width: 992px) {
  
   .card-sub-text{
@@ -584,17 +714,17 @@ margin-bottom:10px;
     margin-bottom: 6vmax;
   }
  
+ 
 }
-.payment-steps{
-  margin-top:50vmax;
-  width: 500px;
-  height: 960px;
-}
+
 
 /* Why Varmı? */
 
 .why-varmı{
   background-color: #EAF7F6;
+  border-radius: 80% / 20% 0 0  0;
+  padding-top: 50px;
+
 }
 .why-varmı-card{
 height: 114px;
@@ -611,18 +741,55 @@ padding-right:10px;
   justify-content: center;
   align-items: center;
 }
+.why-varmı-img{
+  width: 3.7vmax;
+}
 .why-varmı-text{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  font-size: 15px;
 
+}
+@media only screen and (max-width: 600px) {
+  .why-varmı{
+    background-color: #EAF7F6;
+    border-radius: 80% / 10% 0 0  0;
+    padding-top: 50px;
+  
+  }
+  .why-phone{
+    width: 45vmax;
+  }
+  .why-varmı{
+    background-color: #EAF7F6;
+  }
+  .why-varmı-header{
+    padding-left: 60px;
+  }
+  .why-varmı-card{
+    margin-left: 40px;
+  }
+  .why-varmı-img{
+    width: 50px;
+    margin-left: 5px;
+  }
+  .why-varmı-text{
+    font-size: 13px;
+  }
+  .why-sub-text{
+    text-align: center;
+  }
+
+}
 /* Users */
 
 .users-card{
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border: 1px solid #EAE9F2;
 border-radius: 10px;
+margin-top: 5px;
+height: 15vmax;
 }
 .comment{
   margin-top: 50px;
@@ -638,17 +805,27 @@ border-radius: 10px;
     overflow: hidden;
 
 }
+
+/* Landing Footer */
+
+.landing-footer{
+  background-color:#33bea4 ;
+  border-radius: 0 65% / 0px 7% 0 0;
+  margin-top: 25px;
+}
 @media only screen and (max-width: 600px) {
-  .oval-bg{
-    margin-top:-60vmax;
-    margin-left:-60vmax;
-    z-index:-999;
-    position: absolute;
-    width: 90vmax;
-  }
-  .elipse-bg{
-    z-index:-999;
-    position: absolute;
-    width: 50vmax;
+  .landing-footer{
+  background-color:#33bea4 ;
+  border-radius: 0 50% / 0px 2% 0 0;
+  margin-top: 25px;
+}
+.users-card{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #EAE9F2;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: 30vmax;
+  margin-left:15px;
+  margin-right: 15px;
   }
 }

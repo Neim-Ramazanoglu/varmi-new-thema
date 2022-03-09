@@ -17,16 +17,14 @@ function Landing() {
                     Kayıt Ol
                 </button>
             </div>
-            <div className="search-wrapper" style={{ marginTop: '23vmax' }}>
-
+            <div className="search-wrapper" >
                 <div className="landing-search">
                     <img src={require('../../Assets/png/Icon feather-search.png')} style={{ width: '3vmax' }} />
                     <input className='landing-search-input' placeholder='Ara'></input>
                 </div>
-
             </div>
             <div className="flex-container space-between" style={{ marginTop: '22vmax' }}>
-                <div style={{ marginLeft: '10vmax', marginTop: '4vmax' }}>
+                <div className='landing-text'>
                     <div style={{ fontWeight: 'bold', fontSize: '28px' }}>
                         VARMI hayatınıza ne katar?
                     </div>
@@ -54,7 +52,7 @@ function Landing() {
                 </div>
             </div>
             <LandingCard />
-            <img src={require('../../Assets/png/varb999e.png')} style={{ float: 'right', width: '25vmax', marginTop: '30vmax' }} />
+            <img src={require('../../Assets/png/varb999e.png')} style={{ float: 'right', width: '25vmax', marginTop: '30vmax' }} className='d-none d-lg-block' />
             <PaymentSteps />
             <WhyVarmı />
             <Users />

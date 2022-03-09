@@ -3,7 +3,7 @@ import logo from '../../Assets/png/Group 327.png'
 
 function LandingFooter() {
     return (
-        <div style={{ backgroundColor: '#33bea4' }}>
+        <div className='landing-footer'>
             <img src={require('../../Assets/png/Mask Group 2.png')} style={{ width: '25vmax' }} />
 
             <div style={{ textAlign: 'center', color: 'white' }}>

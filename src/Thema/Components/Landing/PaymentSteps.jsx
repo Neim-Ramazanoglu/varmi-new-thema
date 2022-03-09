@@ -2,11 +2,11 @@ import React from 'react'
 
 function PaymentSteps() {
     return (
-        <div className='payment-steps' >
-            <div style={{ fontSize: '1.5vmax' }}>
+        <div className='payment-steps ' >
+            <div style={{ fontSize: '1.5vmax', fontWeight: 'bold' }}>
                 Ödeme Adımları
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="100vmax" height="933.334" viewBox="0 0 1235.527 933.334">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='payment-svg' viewBox="0 0 1235.527 933.334">
                 <defs>
                     <clipPath id="clip-path">
                         <rect id="Rectangle_264" data-name="Rectangle 264" width="83.106" height="83.146" fill="#2db1a7" />

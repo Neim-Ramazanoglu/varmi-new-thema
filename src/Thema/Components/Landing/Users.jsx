@@ -9,7 +9,7 @@ function Users() {
                 Kullanıcılarımız ne diyor?
             </div>
             <div className="row justify-content-center">
-                <div className="col-md-3 col-xl-2 col-6 ">
+                <div className="col-md-3 col-xl-2 col-12 ">
                     <div className="users-card py-3">
                         <div className="flex-container space-between px-4">
                             <div className="fs-6 fw-bold">
@@ -27,7 +27,7 @@ function Users() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-xl-2 col-6">
+                <div className="col-md-3 col-xl-2 col-12">
                     <div className="users-card py-3">
                         <div className="flex-container space-between px-4">
                             <div className="fs-6 fw-bold">
@@ -44,7 +44,7 @@ function Users() {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-3 col-xl-2 col-6">
+                <div className="col-md-3 col-xl-2 col-12">
                     <div className="users-card py-3">
                         <div className="flex-container space-between px-4">
                             <div className="fs-6 fw-bold">
