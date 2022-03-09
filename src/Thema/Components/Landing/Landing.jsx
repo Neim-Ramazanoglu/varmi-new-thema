@@ -12,8 +12,8 @@ function Landing() {
                 <img src={require('../../Assets/png/Group 325.png')} className='elipse-bg' />
             </div>
             <div className="flex-container space-between">
-                <img src={require('../../Assets/png/Group 159.png')} style={{ marginLeft: '1vmax', width: '10vmax' }} />
-                <button type="button" className="btn btn-success" style={{ backgroundColor: '#3AC6AD', border: 'none', marginRight: '1vmax', padding: '5px 30px' }}>
+                <img src={require('../../Assets/png/Group 159.png')} className='varmı-logo' />
+                <button type="button" className="btn btn-success sign-button" >
                     Kayıt Ol
                 </button>
             </div>

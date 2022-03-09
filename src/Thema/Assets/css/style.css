@@ -485,7 +485,16 @@ margin-top: 25px !important;
  }
 
  /* Landing Search */
-
+ .varmı-logo{
+  margin-left: 1vmax;
+  width: 10vmax;
+ }
+ .sign-button{
+  background-color: #3AC6AD !important; 
+  border: none !important;
+  margin-right: 1vmax !important;
+  padding: 5px 30px !important;
+ }
  .landing-search{
   width: 65%;
   height: 8vmax;
@@ -628,4 +637,18 @@ border-radius: 10px;
     -webkit-box-orient: vertical;  
     overflow: hidden;
 
+}
+@media only screen and (max-width: 600px) {
+  .oval-bg{
+    margin-top:-60vmax;
+    margin-left:-60vmax;
+    z-index:-999;
+    position: absolute;
+    width: 90vmax;
+  }
+  .elipse-bg{
+    z-index:-999;
+    position: absolute;
+    width: 50vmax;
+  }
 }
