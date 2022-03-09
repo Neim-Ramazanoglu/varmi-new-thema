@@ -1,6 +1,8 @@
 import React from 'react'
 import LandingCard from './LandingCard'
 import PaymentSteps from './PaymentSteps'
+import Users from './Users'
+import WhyVarmı from './WhyVarmı'
 
 function Landing() {
     return (
@@ -54,6 +56,8 @@ function Landing() {
             <LandingCard />
             <img src={require('../../Assets/png/varb999e.png')} style={{ float: 'right', width: '25vmax', marginTop: '30vmax' }} />
             <PaymentSteps />
+            <WhyVarmı />
+            <Users />
         </div >
     )
 }

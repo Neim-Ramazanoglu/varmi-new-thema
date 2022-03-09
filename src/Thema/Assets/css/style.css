@@ -576,3 +576,56 @@ margin-bottom:10px;
   }
  
 }
+.payment-steps{
+  margin-top:50vmax;
+  width: 500px;
+  height: 960px;
+}
+
+/* Why Varmı? */
+
+.why-varmı{
+  background-color: #EAF7F6;
+}
+.why-varmı-card{
+height: 114px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EAE9F2;
+border-radius: 10px;
+opacity: 1;
+display:flex;
+margin-top:10px;
+padding-right:10px;
+}
+.why-varmı-img-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-varmı-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Users */
+
+.users-card{
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EAE9F2;
+border-radius: 10px;
+}
+.comment{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.line-clamp-comment{
+  display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+
+}

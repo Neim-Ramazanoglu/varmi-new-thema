@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
 import Landing from './Components/Landing/Landing';
+import LandingFooter from './Components/Landing/LandingFooter';
 import Body from './Main/Body'
 import Footer from './Main/Footer';
 import Header from './Main/Header'
@@ -17,7 +18,10 @@ function Index() {
                         <Footer />
                     </Router>
                     :
-                    <Landing />
+                    <Router>
+                        <Landing />
+                        <LandingFooter />
+                    </Router>
             }
         </div>
 
