@@ -1,64 +1,103 @@
 import React from 'react'
-
+import dash from '../../Assets/svg/dash.svg'
+import plus from '../../Assets/svg/plus.svg'
+import verify from '../../Assets/svg/verify.svg'
+import avatar from '../../Assets/svg/avatar.svg'
+import arrow from '../../Assets/svg/line-alt-svgrepo-com.svg'
+import deneme from '../../Assets/svg/deneme.svg'
 function WhyVarmı() {
     return (
         <div className='why-varmı'>
-            <div className="row justify-content-center">
-                <div className="col-4 d-none d-lg-block">
-                    <img src={require('../../Assets/png/locationlar.png')} style={{ width: '20vmax' }} />
+            <div className="row ">
+                <div className="col-md-5 col-12" style={{ margin: 'auto 0', textAlign: 'center' }}>
+                    <img src={require('../../Assets/png/phone-play.png')} className='why-phone' />
                 </div>
-                <div className="col-md-4 col-12"  >
-                    <div className=' fw-bold mb-5 fs-3 why-varmı-header' >
-                        Neden VARMI?
-                    </div>
-                    <div className='why-varmı-card col-9'>
-                        <div className="row">
-                            <div className='why-varmı-img-wrapper col-4'>
-                                <img src={require('../../Assets/png/dash.png')} className='why-varmı-img' />
-                            </div>
-                            <div className='why-varmı-text col-8'>
-                                Öncelikle hizmet bulmak için en hızlısıyız.
-                            </div>
+                <div className="col-md-3 " style={{ margin: 'auto 0', textAlign: 'center' }}>
+                    <div className="row">
+                        <div className="col-7 fw-bold why-header" style={{ margin: 'auto 0', textAlign: 'center', fontSize: '60px' }}>
+                            Neden VARMI?
                         </div>
-                    </div>
-                    <div className='why-varmı-card col-9'>
-                        <div className="row">
-                            <div className='why-varmı-img-wrapper col-4'>
-                                <img src={require('../../Assets/png/plus.png')} className='why-varmı-img' />
-                            </div>
-                            <div className='why-varmı-text col-8'>
-                                Ayrıca hizmet ilanı vermek çok kolay.
-                            </div>
-                        </div>
-                    </div>
-                    <div className='why-varmı-card col-9'>
-                        <div className="row">
-                            <div className='why-varmı-img-wrapper col-4'>
-                                <img src={require('../../Assets/png/verify.png')} className='why-varmı-img' />
-                            </div>
-                            <div className='why-varmı-text col-8'>
-                                Şeffaf yapısı ile kaliteli hizmete ulaşması için müşteriye birçok seçenek sunuluyor.
-                            </div>
-                        </div>
-                    </div>
-                    <div className='why-varmı-card col-9'>
-                        <div className="row">
-                            <div className='why-varmı-img-wrapper col-4'>
-                                <img src={require('../../Assets/png/avatar.png')} className='why-varmı-img' />
-                            </div>
-                            <div className='why-varmı-text col-8'>
-                                Hizmet verenler ile doğrudan temas kurabilirsiniz.
+                        <div className="col-3" style={{ lineHeight: '1.5' }}>
+                            <img src={deneme} style={{ width: '170px', transform: 'rotate(-45deg)', marginLeft: '-20px' }} />
+                            <img src={deneme} style={{ width: '170px', transform: 'rotate(-15deg)' }} />
+                            <img src={deneme} style={{ width: '170px', transform: 'rotate(15deg)' }} />
+                            <img src={deneme} style={{ width: '170px', transform: 'rotate(40deg)', marginLeft: '-15px' }} />
 
+                        </div>
+                    </div>
+                </div>
+
+                <div className="col-md-4 col-12" style={{ margin: 'auto ' }} >
+                    {/* <div className=' fw-bold mb-5 fs-3 why-varmı-header' >
+                        Neden VARMI?
+                    </div> */}
+                    <div className='why-varmı-card col-9'>
+                        <div className="row">
+                            <div className='why-varmı-img-wrapper col-4'>
+                                <img src={dash} className='why-varmı-img' />
+                            </div>
+                            <div className='col-8 why-text'>
+                                <div className='fw-bold fs-4 mt-1'>
+                                    Hızlı
+                                </div>
+                                <div className='why-varmı-text text-muted mt-2'>
+                                    Öncelikle hizmet bulmak için en hızlısıyız.
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div style={{ color: '#34BEA5', marginTop: '15px' }} className='why-sub-text'>
+                    <div className='why-varmı-card col-9'>
+                        <div className="row">
+                            <div className='why-varmı-img-wrapper col-4'>
+                                <img src={plus} className='why-varmı-img' />
+                            </div>
+                            <div className='col-8 why-text'>
+                                <div className='fw-bold fs-4 mt-1'>
+                                    Kolay
+                                </div>
+                                <div className='why-varmı-text text-muted mt-2'>
+                                    Ayrıca hizmet ilanı vermek çok kolay.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='why-varmı-card col-9'>
+                        <div className="row">
+                            <div className='why-varmı-img-wrapper col-4'>
+                                <img src={verify} className='why-varmı-img' />
+                            </div>
+                            <div className='col-8 why-text'>
+                                <div className='fw-bold fs-4 mt-1'>
+                                    Kaliteli
+                                </div>
+                                <div className='why-varmı-text text-muted mt-2'>
+                                    Ayrıca hizmet ilanı vermek çok kolay.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='why-varmı-card col-9'>
+                        <div className="row">
+                            <div className='why-varmı-img-wrapper col-4'>
+                                <img src={avatar} className='why-varmı-img' />
+                            </div>
+                            <div className='col-8 why-text'>
+                                <div className='fw-bold fs-4 mt-1'>
+                                    Güvenilir
+                                </div>
+                                <div className='why-varmı-text text-muted mt-2'>
+                                    Ayrıca hizmet ilanı vermek çok kolay.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style={{ color: '#34BEA5', marginTop: '15px', marginBottom: '15px' }} className='why-sub-text'>
                         <span className='fw-bold '>Nazik ve saygılı</span> insanları platformda barındırıyoruz!
                     </div>
                 </div>
-                <div className="col-md-4 col-12">
-                    <img src={require('../../Assets/png/phone-play.png')} className='why-phone' />
-                </div>
+                {/* <div className="col-4 d-none d-lg-block">
+                    <img src={require('../../Assets/png/locationlar.png')} className='why-phone-vertical' />
+                </div> */}
             </div>
         </div>
     )

@@ -3,15 +3,17 @@ import LandingCard from './LandingCard'
 import PaymentSteps from './PaymentSteps'
 import Users from './Users'
 import WhyVarmı from './WhyVarmı'
-
+import pin from '../../Assets/svg/pin.svg'
 function Landing() {
     return (
         <div>
             <img src={require('../../Assets/png/Oval.png')} className='oval-bg' />
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                 <img src={require('../../Assets/png/Group 325.png')} className='elipse-bg' />
+                <div style={{ position: 'absolute', marginTop: '15vmax', marginLeft: '30px', fontSize: '50px', fontWeight: 'bold' }}>Lorem Ipsum</div>
+                <img src={pin} style={{ width: '550px', position: 'absolute', marginTop: '13vmax', zIndex: '-1', marginLeft: '1vmax' }} />
             </div>
-            <div className="flex-container space-between">
+            <div className="flex-container space-between mt-1">
                 <img src={require('../../Assets/png/Group 159.png')} className='varmı-logo' />
                 <button type="button" className="btn btn-success sign-button" >
                     Kayıt Ol
@@ -25,7 +27,7 @@ function Landing() {
             </div>
             <div className="flex-container space-between" style={{ marginTop: '22vmax' }}>
                 <div className='landing-text'>
-                    <div style={{ fontWeight: 'bold', fontSize: '28px' }}>
+                    <div style={{ fontWeight: 'bold', fontSize: '60px' }}>
                         VARMI hayatınıza ne katar?
                     </div>
                     <div className='card-sub-text col-lg-8 col-12'>
@@ -52,7 +54,8 @@ function Landing() {
                 </div>
             </div>
             <LandingCard />
-            <img src={require('../../Assets/png/varb999e.png')} style={{ float: 'right', width: '25vmax', marginTop: '30vmax' }} className='d-none d-lg-block' />
+            <div className='margining'></div>
+            <img src={require('../../Assets/png/varb999e.png')} style={{ float: 'right', width: '25vmax', marginTop: 'inherit' }} className='d-none d-lg-block' />
             <PaymentSteps />
             <WhyVarmı />
             <Users />

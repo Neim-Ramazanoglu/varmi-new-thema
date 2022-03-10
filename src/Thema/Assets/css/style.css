@@ -51,12 +51,7 @@ body {
     display: inline;
 }
 
-@media only screen and (max-width: 600px) {
-    .content2{
-     display: none;
-   }
-   
-}
+
 @media only screen and (min-width: 992px) {
   .of{
     display: none;
@@ -312,38 +307,7 @@ text-align: center;
   top:-4vmax;
   width: 9vw;
 }
-@media only screen and (max-width: 600px) {
-  .no-varben-textarea{
-    height: 8vw;
-    background: #3AC6AD 0% 0% no-repeat padding-box;
-    border-radius: 6000px;
-    opacity: 1;
-    margin-right: auto;
-    margin-left: auto;
-    display: table;
-    position:relative;
-    margin-top: 5vw;
-    margin-bottom: 5vw;
-    font-size: 1.3vmax;
-    width: 40vmax;
-  
-  }
-  .no-varben-text{
-    text-align: center;
-    color: white;
-    vertical-align: middle;
-    display: table-cell;
-    padding-left: 6vw;
-    padding-right: 5vw;
-  }
-  .varben-icon{
-    position: absolute;
-    left:-4vmax;
-    top: -3vmax;
-    width: 14vw;
-  }
- 
-}
+
 
 /* Footer */
 @media only screen and (min-width: 992px) {
@@ -428,7 +392,7 @@ input.search-footer-box:focus{
 .search-footer-box {
   background-color: transparent;
   outline: none;
-  height: 35px;
+  height: 45px;
   font-size: 15px;
   border: 0;
   width: 100%;
@@ -441,7 +405,7 @@ input.search-footer-box:focus{
   border:none;
   outline: 0;
   width: 25%;
-  height: 35px;
+  height: 45px;
   /* UI Properties */
   background: #3AC6AD 0% 0% no-repeat padding-box;
   border-radius: 0px 20px 20px 0px;
@@ -486,13 +450,13 @@ margin-top: 25px !important;
 
  /* Landing Search */
  .varmı-logo{
-  margin-left: 1vmax;
+  margin-left: 3vmax;
   width: 10vmax;
  }
  .sign-button{
   background-color: #3AC6AD !important; 
   border: none !important;
-  margin-right: 1vmax !important;
+  margin-right: 3vmax !important;
   padding: 5px 30px !important;
  }
  .search-wrapper{
@@ -501,7 +465,7 @@ margin-top: 25px !important;
  .landing-search{
   width: 65%;
   height: 8vmax;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #62D6C4;
   border-radius: 35px;
   opacity: 1;
@@ -540,7 +504,224 @@ input:focus{
   position: absolute;
   width: 60vmax;
 }
+
+/* Landing Card */
+.green-card{
+  background-color: #33bea4;
+  z-index: -55;
+  position: absolute;
+  margin-top: -5vmax; 
+  border-radius: 0 0 50% / 15% 0;
+  padding-bottom: 10vmax;
+}
+.yellow-mask{
+  z-index: -10;
+  position: absolute;
+  width: 20vmax;
+  height: 5vmax;
+  float: right;
+  margin-left: 80vmax;
+}
+.landing-card{
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 52px 54px #00000029;
+margin-left:20px;
+border-radius: 10px;
+padding: 30px 0px 50px 10px;
+margin-bottom:20px;
+}
+.card-phone-img{
+  width: 27vmax;
+  margin-right: 3vmax;
+  margin-top: 3vmax;
+}
+.card-sub-text{
+  margin-top: 4vmax ;
+  width: 40vmax;
+  line-height: 2.2vmax;
+  font-size: 1vmax;
+}
+.watch-text{
+  margin-top: 2vmax; 
+  color: #33bea4;
+  font-size: 0.7vmax;
+}
+.payment-svg{
+  width: 50vmax;
+  height: 40vmax;
+}
+.payment-steps{
+  margin-top:60vmax;
+  width: 500px;
+  height: 50vmax;
+  margin-left: 25%;
+}
+.landing-text{
+  margin-left: 10vmax;
+  margin-top: 4vmax;
+}
+
+@media only screen and (max-width: 992px) {
+ 
+  .card-sub-text{
+    margin-top: 4vmax ;
+    line-height: 2.2vmax;
+    font-size: 0.8vmax;
+  }
+  .watch-text{
+    margin-top: 2vmax; 
+    color: #33bea4;
+    font-size: 0.8vmax;
+    margin-bottom: 6vmax;
+  }
+ 
+ 
+}
+
+
+/* Why Varmı? */
+
+.why-varmı{
+  background-color: #EAF7F6;
+  border-radius: 80% / 20% 0 0  0;
+  padding-top: 50px;
+}
+.why-varmı-card{
+height: 120px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EAE9F2;
+border-radius: 80px 10px 10px 80px;
+opacity: 1;
+display:flex;
+margin-top:20px;
+padding-right:10px;
+}
+
+.why-varmı-img{
+  width:118px;
+  -webkit-box-shadow: 0px 0px 7px 5px rgba(246,218,6,0.2); 
+box-shadow: 0px 0px 7px 5px rgba(246,218,6,0.2); ;
+border-radius: 50%;
+}
+.why-header{
+  text-shadow:  0 0 0.15em rgb(121, 177, 174);
+}
+.why-varmı-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+
+}
+.why-text{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* Users */
+
+.users-card{
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #EAE9F2;
+border-radius: 10px;
+margin-top: 5px;
+height: 15vmax;
+}
+.comment{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.line-clamp-comment{
+  display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+
+}
+.why-phone{
+  width: 35vmax;
+}
+
+/* Landing Footer */
+
+.landing-footer{
+  background-color:#33bea4 ;
+  border-radius: 0 65% / 0px 7% 0 0;
+  margin-top: 25px;
+}
+
+.landing-footer-card{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 52px 54px #00000029;
+  border-radius: 10px;
+  padding: 10px 0px 10px 10px;
+  margin-bottom:20px;
+}
+
+.varbe-img-footer{
+  width: 5vmax;
+  position: absolute;
+  margin-top: -3vmax;
+  margin-left: 2.5vmax;
+  -webkit-filter: drop-shadow(10px 10px 10px #22222237);
+  filter: drop-shadow(10px 10px 10px #22222251)
+}
+.varbe-img-footer2{
+  width: 9vmax;
+  position: absolute;
+  margin-top: -3vmax;
+  -webkit-filter: drop-shadow(10px 10px 10px #22222237);
+  filter: drop-shadow(10px 10px 10px #22222251)
+}
+
+.circler { 
+  width: 5vmax;
+  height: 5vmax;
+  position: absolute;
+  background: rgb(246, 209, 88);
+  -moz-border-radius: 70px; 
+  -webkit-border-radius: 70px; 
+  border-radius: 70px;
+  margin-left: 2vmax;
+  margin-top: -1vmax;
+}
+
 @media only screen and (max-width: 600px) {
+  .content2{
+    display: none;
+  }
+  .no-varben-textarea{
+    height: 8vw;
+    background: #3AC6AD 0% 0% no-repeat padding-box;
+    border-radius: 6000px;
+    opacity: 1;
+    margin-right: auto;
+    margin-left: auto;
+    display: table;
+    position:relative;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    font-size: 1.3vmax;
+    width: 40vmax;
+  
+  }
+  .no-varben-text{
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 6vw;
+    padding-right: 5vw;
+  }
+  .varben-icon{
+    position: absolute;
+    left:-4vmax;
+    top: -3vmax;
+    width: 14vw;
+  }
   .oval-bg{
     margin-top:-60vmax;
     margin-left:-60vmax;
@@ -598,64 +779,6 @@ input:focus{
   .search-wrapper{
     margin-top: 18vmax;
   }
-}
-/* Landing Card */
-.green-card{
-  background-color: #33bea4;
-  z-index: -55;
-  position: absolute;
-  margin-top: -5vmax; 
-  border-radius: 0 0 50% / 15% 0;
-  padding-bottom: 10vmax;
-}
-.yellow-mask{
-  z-index: -10;
-  position: absolute;
-  width: 20vmax;
-  height: 5vmax;
-  float: right;
-  margin-left: 80vmax;
-}
-.landing-card{
-background: #FFFFFF 0% 0% no-repeat padding-box;
-box-shadow: 0px 52px 54px #00000029;
-margin-left:10px;
-border-radius: 10px;
-padding: 15px;
-margin-bottom:10px;
-}
-.card-phone-img{
-  width: 27vmax;
-  margin-right: 3vmax;
-  margin-top: 3vmax;
-}
-.card-sub-text{
-  margin-top: 4vmax ;
-  width: 40vmax;
-  line-height: 2.2vmax;
-  font-size: 0.8vmax;
-}
-.watch-text{
-  margin-top: 2vmax; 
-  color: #33bea4;
-  font-size: 0.7vmax;
-}
-.payment-svg{
-  width: 50vmax;
-  height: 40vmax;
-}
-.payment-steps{
-  margin-top:60vmax;
-  width: 500px;
-  height: 50vmax;
-  margin-left: 25%;
-}
-.landing-text{
-  margin-left: 10vmax;
-  margin-top: 4vmax;
-}
-
-@media only screen and (max-width: 600px) {
   .green-card{
     background-color: #33bea4;
     z-index: -55;
@@ -699,70 +822,13 @@ margin-bottom:10px;
     margin-right: 5vmax;
     margin-top: 4vmax;
   }
-}
-@media only screen and (max-width: 992px) {
- 
-  .card-sub-text{
-    margin-top: 4vmax ;
-    line-height: 2.2vmax;
-    font-size: 0.8vmax;
-  }
-  .watch-text{
-    margin-top: 2vmax; 
-    color: #33bea4;
-    font-size: 0.8vmax;
-    margin-bottom: 6vmax;
-  }
- 
- 
-}
-
-
-/* Why Varmı? */
-
-.why-varmı{
-  background-color: #EAF7F6;
-  border-radius: 80% / 20% 0 0  0;
-  padding-top: 50px;
-
-}
-.why-varmı-card{
-height: 114px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #EAE9F2;
-border-radius: 10px;
-opacity: 1;
-display:flex;
-margin-top:10px;
-padding-right:10px;
-}
-.why-varmı-img-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.why-varmı-img{
-  width: 3.7vmax;
-}
-.why-varmı-text{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-
-}
-@media only screen and (max-width: 600px) {
   .why-varmı{
     background-color: #EAF7F6;
     border-radius: 80% / 10% 0 0  0;
     padding-top: 50px;
-  
   }
   .why-phone{
     width: 45vmax;
-  }
-  .why-varmı{
-    background-color: #EAF7F6;
   }
   .why-varmı-header{
     padding-left: 60px;
@@ -780,40 +846,6 @@ padding-right:10px;
   .why-sub-text{
     text-align: center;
   }
-
-}
-/* Users */
-
-.users-card{
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border: 1px solid #EAE9F2;
-border-radius: 10px;
-margin-top: 5px;
-height: 15vmax;
-}
-.comment{
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-.line-clamp-comment{
-  display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-
-}
-
-/* Landing Footer */
-
-.landing-footer{
-  background-color:#33bea4 ;
-  border-radius: 0 65% / 0px 7% 0 0;
-  margin-top: 25px;
-}
-@media only screen and (max-width: 600px) {
   .landing-footer{
   background-color:#33bea4 ;
   border-radius: 0 50% / 0px 2% 0 0;
@@ -827,5 +859,88 @@ height: 15vmax;
   height: 30vmax;
   margin-left:15px;
   margin-right: 15px;
+  }
+}
+.why-sub-text{
+  margin-left: 50px;
+}
+.margining{
+  margin-top: 35vmax;
+}
+.why-phone-vertical{
+  width: 20vmax;
+}
+@media only screen and (min-width: 768px) {
+  /* .payment-steps{
+    margin-top:121vmax;
+    width: 500px;
+    height: 50vmax;
+    margin-left: 25%;
+  } */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  
+  .why-varmı{
+    background-color: #EAF7F6;
+    border-radius: 80% / 20% 0 0  0;
+    padding-top: 150px;
+    padding-bottom: 50px;
+  }
+  
+  .payment-steps{
+    margin-top:91vmax;
+    width: 500px;
+    height: 50vmax;
+    margin-left: 25%;
+  }
+  .users-card{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #EAE9F2;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 25vmax;
+    -left: 2vmax;
+    }
+    .margining{
+      margin-top: 55vmax;
+    }
+    .card-sub-text{
+      font-size: 12px;
+    }
+    .watch-text{
+      font-size: 10px;
+    }
+    .why-phone-vertical{
+      width: 25vmax;
+    }
+    .footer{
+      margin-top: 5vmax;
+    }
+    .why-phone{
+      width: 34vmax;
+    }
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1440px) {
+.why-varmı{
+  background-color: #EAF7F6;
+  border-radius: 80% / 20% 0 0  0;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.payment-steps{
+  margin-top:65vmax;
+  width: 500px;
+  height: 50vmax;
+  margin-left: 25%;
+}
+.users-card{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #EAE9F2;
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 20vmax;
   }
 }

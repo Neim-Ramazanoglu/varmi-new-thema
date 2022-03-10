@@ -5,13 +5,13 @@ import comment from '../../Assets/svg/Path1.svg'
 function Users() {
     return (
         <div>
-            <div className='text-center fw-bold fs-2 mt-5'>
+            <div className='text-center fw-bold fs-2 mt-5 mb-5'>
                 Kullanıcılarımız ne diyor?
             </div>
             <div className="row justify-content-center">
                 <div className="col-md-3 col-xl-2 col-12 ">
                     <div className="users-card py-3">
-                        <div className="flex-container space-between px-4">
+                        <div className="flex-container space-between px-4 mt-3">
                             <div className="fs-6 fw-bold">
                                 Keyfini çıkarmak bu kadar
                                 kolay olmadı
@@ -29,7 +29,7 @@ function Users() {
                 </div>
                 <div className="col-md-3 col-xl-2 col-12">
                     <div className="users-card py-3">
-                        <div className="flex-container space-between px-4">
+                        <div className="flex-container space-between px-4 mt-3">
                             <div className="fs-6 fw-bold">
                                 Dayanışma Ruhu
                             </div>
@@ -46,7 +46,7 @@ function Users() {
                 </div>
                 <div className="col-md-3 col-xl-2 col-12">
                     <div className="users-card py-3">
-                        <div className="flex-container space-between px-4">
+                        <div className="flex-container space-between px-4 mt-3">
                             <div className="fs-6 fw-bold">
                                 sade, güzel ve işlevsel👍🏻
                             </div>

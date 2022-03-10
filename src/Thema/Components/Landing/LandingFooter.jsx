@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../Assets/png/Group 327.png'
-
+import green from '../../Assets/svg/green-modern3.svg'
 function LandingFooter() {
     return (
         <div className='landing-footer'>
@@ -20,20 +20,8 @@ function LandingFooter() {
                 </div>
             </div>
             <div className='footer'>
-                <div className="row">
-                    <div className="col-sm-2 col-6 d-none d-xs-block d-sm-block d-md-block d-lg-block d-xl-block">
-                        <img src={logo} />
-                    </div>
-                    <div className="col-sm-2 offset-sm-5 col-6 offset-3 ">
-                        <span className='varben-text vertical-center' style={{ color: 'white' }}>342,233</span>
-                        <span className='text-uppercase ps-2 fw-bold vertical-center' style={{ color: 'white' }}>Varben</span>
-                    </div>
-                    <div className="col-sm-2 offset-sm-1 col-6 offset-3">
-                        <span className='varben-text vertical-center' style={{ color: 'white' }}>5,342,216</span>
-                        <span className='text-uppercase ps-2 fw-bold vertical-center' style={{ color: 'white' }}>Kullanıcı</span>
-                    </div>
-                </div>
-                <div className="row" style={{ marginTop: '1.5vw', height: '350px', color: 'white' }}>
+
+                <div className="row" style={{ marginTop: '4vw', height: '350px', color: 'white' }}>
                     <div className="col-md-3 col-6">
                         <span>
                             Üst Menü
@@ -80,25 +68,98 @@ function LandingFooter() {
                             Mail Bülteni
                         </span>
                         <ul className='no-bullets' style={{ marginTop: '1.5vw' }}>
-                            <li className='footer-list-item' style={{ color: 'white' }}>
+                            <li className='footer-list-item mb-2' style={{ color: 'white' }}>
                                 Mail bültenimize kayıt oldun, fırsatlardan ilk siz haberdar olun.
                             </li>
                             <li className='footer-list-item'>
-                                <div className="search-footer-container">
+                                <div className="search-footer-container col-9">
                                     <input type="text" className="search-footer-box" placeholder="Mail Adresi" />
                                     <button className="search-footer-button" style={{ backgroundColor: '#F6D058' }}>Kayıt Ol</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div className=" col-10  mt-5 ">
+                                    <div className="row ">
+                                        <div className="col-5 ">
+                                            <div className="row landing-footer-card " >
+                                                <div className="col-6">
+                                                    <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
+                                                        342,512
+                                                    </div>
+                                                    <div style={{ color: 'grey', fontSize: '14px' }}>
+                                                        Varben
+                                                    </div>
+                                                </div>
+                                                <div className="col-6">
+                                                    <img src={require('../../Assets/png/varbe.png')} className='varbe-img-footer' />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-5 offset-1">
+                                            <div className="row landing-footer-card" >
+                                                <div className="col-6">
+                                                    <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
+                                                        5,342,216
+                                                    </div>
+                                                    <div style={{ color: 'grey', fontSize: '14px' }}>
+                                                        Kullanıcı
+                                                    </div>
+                                                </div>
+                                                <div className="col-6">
+                                                    <div className=''>
+                                                        <img src={green} className='varbe-img-footer2' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
+                {/* <div className="row mt-5">
+                    <div className="col-sm-2 col-6 d-none d-xs-block d-sm-block d-md-block d-lg-block d-xl-block">
+                        <img src={logo} />
+                    </div>
+                    <div className="col-sm-2 offset-sm-5 col-lg-2 offset-lg-4 col-6 offset-3 ">
+                        <div className="row landing-footer-card mb-5" >
+                            <div className="col-6">
+                                <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
+                                    342,512
+                                </div>
+                                <div style={{ color: 'grey', fontSize: '14px' }}>
+                                    Varben
+                                </div>
+                            </div>
+                            <div className="col-6">
+                                <img src={require('../../Assets/png/varbe.png')} className='varbe-img-footer' />
+                            </div>
+                        </div>
+                        <div className="row landing-footer-card" >
+                            <div className="col-6">
+                                <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
+                                    5,342,216
+                                </div>
+                                <div style={{ color: 'grey', fontSize: '14px' }}>
+                                    Kullanıcı
+                                </div>
+                            </div>
+                            <div className="col-6">
+                                <img src={require('../../Assets/png/varbe.png')} className='varbe-img-footer' />
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
                 <div className="row ">
-                    <div className="text-end mb-5">
+                    <div className='col-3 mb-3'>
+                        <img src={logo} />
+                    </div>
+                    <div className="text-end col-9" style={{ margin: 'auto 0' }}>
                         <img className='px-2' src={require('../../Assets/png/facebook-white.png')} />
                         <img className='px-2' src={require('../../Assets/png/instagram-white.png')} />
                         <img className='px-2' src={require('../../Assets/png/twitter-white.png')} />
                         <img className='px-2' src={require('../../Assets/png/youtube-white.png')} />
-
                     </div>
                 </div>
                 <div style={{ borderBottom: '2px solid white', opacity: '0.3' }}></div>
