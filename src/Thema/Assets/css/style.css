@@ -511,7 +511,7 @@ input:focus{
 .green-card{
   background-color: #33bea4;
   z-index: -55;
-  position: absolute;
+  position: relative;
   margin-top: -5vmax; 
   border-radius: 0 0 50% / 15% 0;
   padding-bottom: 10vmax;
@@ -553,7 +553,7 @@ margin-bottom:20px;
   height: 40vmax;
 }
 .payment-steps{
-  margin-top:60vmax;
+  margin-top:15vmax;
   width: 500px;
   height: 50vmax;
   margin-left: 25%;
@@ -869,7 +869,7 @@ height: 15vmax;
   margin-left: 50px;
 }
 .margining{
-  margin-top: 35vmax;
+  margin-top: -15vmax;
 }
 .why-phone-vertical{
   width: 20vmax;
@@ -882,9 +882,17 @@ height: 15vmax;
     margin-left: 25%;
   } */
 }
-
+.varmı-icon{
+  float: right;
+  width: 25vmax;
+  margin-top: inherit;
+}
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-  
+  .varmı-icon{
+    float: right;
+    width: 25vmax;
+    margin-top: -75vmax;
+  }
   .why-varmı{
     background-color: #EAF7F6;
     border-radius: 80% / 20% 0 0  0;
@@ -893,7 +901,7 @@ height: 15vmax;
   }
   
   .payment-steps{
-    margin-top:91vmax;
+    margin-top:-50vmax;
     width: 500px;
     height: 50vmax;
     margin-left: 25%;

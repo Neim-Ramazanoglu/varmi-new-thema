@@ -2,7 +2,7 @@ import React from 'react'
 
 function PaymentSteps() {
     return (
-        <div className='payment-steps ' >
+        <div className='payment-steps '  >
             <div style={{ fontSize: '1.5vmax', fontWeight: 'bold' }}>
                 Ödeme Adımları
             </div>
@@ -37,27 +37,27 @@ function PaymentSteps() {
                         <path id="Ellipse_10_-_Outline" data-name="Ellipse 10 - Outline" d="M13.5,2A11.5,11.5,0,0,0,5.368,21.632,11.5,11.5,0,0,0,21.632,5.368,11.425,11.425,0,0,0,13.5,2m0-2A13.5,13.5,0,1,1,0,13.5,13.5,13.5,0,0,1,13.5,0Z" transform="translate(698 4704)" fill="#2db1a7" />
                     </g>
                     <g id="line_dot_draw-2" data-name="line dot draw" transform="translate(605.616 -584)">
-                        <path id="dot_draw-5" data-name="dot draw" d="M1016,4822s545,67-211,231" transform="translate(693.225 -185.144) rotate(11)" fill="none" stroke="#2db1a7" stroke-width="2" stroke-dasharray="8 4" />
+                        <path id="dot_draw-5" data-name="dot draw" d="M1016,4822s545,67-211,231" transform="translate(693.225 -185.144) rotate(11)" fill="none" stroke="#2db1a7" strokeWidth="2" strokeDasharray="8 4" />
                     </g>
-                    <text id="Sipariş_oluştur" data-name="Sipariş oluştur" transform="translate(810 3696)" font-size="18" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="-65.096" y="0">Sipariş oluştur</tspan></text>
-                    <text id="Ödeme_talebinde_bulun" data-name="Ödeme talebinde bulun" transform="translate(529 3930)" font-size="18" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="-105.97" y="0">Ödeme talebinde bulun</tspan></text>
-                    <text id="Para_hesabına_yatsın" data-name="Para hesabına yatsın" transform="translate(1339 4113.863)" font-size="18" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="-93.819" y="0">Para hesabına yatsın</tspan></text>
+                    <text id="Sipariş_oluştur" data-name="Sipariş oluştur" transform="translate(810 3696)" fontSize="18" fontFamily="OpenSans-Bold, Open Sans" fontWeight="700"><tspan x="-65.096" y="0">Sipariş oluştur</tspan></text>
+                    <text id="Ödeme_talebinde_bulun" data-name="Ödeme talebinde bulun" transform="translate(529 3930)" fontSize="18" fontFamily="OpenSans-Bold, Open Sans" fontWeight="700"><tspan x="-105.97" y="0">Ödeme talebinde bulun</tspan></text>
+                    <text id="Para_hesabına_yatsın" data-name="Para hesabına yatsın" transform="translate(1339 4113.863)" fontSize="18" fontFamily="OpenSans-Bold, Open Sans" fontWeight="700"><tspan x="-93.819" y="0">Para hesabına yatsın</tspan></text>
                     <circle id="Ellipse_9" data-name="Ellipse 9" cx="20" cy="20" r="20" transform="translate(688.895 3578)" fill="#2db1a7" />
-                    <text id="_1" data-name="1" transform="translate(709.895 3605)" fill="#fff" font-size="18" font-family="OpenSans-Light, Open Sans" font-weight="300"><tspan x="-5.137" y="0">1</tspan></text>
+                    <text id="_1" data-name="1" transform="translate(709.895 3605)" fill="#fff" fontSize="18" fontFamily="OpenSans-Light, Open Sans" fontWeight="300"><tspan x="-5.137" y="0">1</tspan></text>
                     <g id="_2" data-name="2" transform="translate(-181.105 -1208)">
                         <circle id="Ellipse_9-2" data-name="Ellipse 9" cx="20" cy="20" r="20" transform="translate(803 5027)" fill="#2db1a7" />
-                        <text id="_2-2" data-name="2" transform="translate(823 5054)" fill="#fff" font-size="18" font-family="OpenSans-Light, Open Sans" font-weight="300"><tspan x="-5.137" y="0">2</tspan></text>
+                        <text id="_2-2" data-name="2" transform="translate(823 5054)" fill="#fff" fontSize="18" fontFamily="OpenSans-Light, Open Sans" fontWeight="300"><tspan x="-5.137" y="0">2</tspan></text>
                     </g>
                     <g id="_2-3" data-name="2" transform="translate(536.324 -893)">
                         <circle id="Ellipse_9-3" data-name="Ellipse 9" cx="20" cy="20" r="20" transform="translate(803 5027)" fill="#2db1a7" />
-                        <text id="_5" data-name="5" transform="translate(823 5054)" fill="#fff" font-size="18" font-family="OpenSans-Light, Open Sans" font-weight="300"><tspan x="-5.137" y="0">5</tspan></text>
+                        <text id="_5" data-name="5" transform="translate(823 5054)" fill="#fff" fontSize="18" fontFamily="OpenSans-Light, Open Sans" fontWeight="300"><tspan x="-5.137" y="0">5</tspan></text>
                     </g>
-                    <text id="Ödeme_yap" data-name="Ödeme yap" transform="translate(781.938 4213)" font-size="18" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="-50.919" y="0">Ödeme yap</tspan></text>
+                    <text id="Ödeme_yap" data-name="Ödeme yap" transform="translate(781.938 4213)" fontSize="18" fontFamily="OpenSans-Bold, Open Sans" fontWeight="700"><tspan x="-50.919" y="0">Ödeme yap</tspan></text>
                     <circle id="Ellipse_9-4" data-name="Ellipse 9" cx="20" cy="20" r="20" transform="translate(687.895 4105)" fill="#2db1a7" />
-                    <text id="_3" data-name="3" transform="translate(707.895 4132)" fill="#fff" font-size="18" font-family="OpenSans-Light, Open Sans" font-weight="300"><tspan x="-5.137" y="0">3</tspan></text>
+                    <text id="_3" data-name="3" transform="translate(707.895 4132)" fill="#fff" fontSize="18" fontFamily="OpenSans-Light, Open Sans" fontWeight="300"><tspan x="-5.137" y="0">3</tspan></text>
                     <circle id="Ellipse_9-5" data-name="Ellipse 9" cx="20" cy="20" r="20" transform="translate(1010.681 4230)" fill="#2db1a7" />
-                    <text id="_4" data-name="4" transform="translate(1031.681 4257)" fill="#fff" font-size="18" font-family="OpenSans-Light, Open Sans" font-weight="300"><tspan x="-5.137" y="0">4</tspan></text>
-                    <text id="Sipariş_onaylansın" data-name="Sipariş onaylansın" transform="translate(1092.681 4416.136)" font-size="18" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="-81.756" y="0">Sipariş onaylansın</tspan></text>
+                    <text id="_4" data-name="4" transform="translate(1031.681 4257)" fill="#fff" fontSize="18" fontFamily="OpenSans-Light, Open Sans" fontWeight="300"><tspan x="-5.137" y="0">4</tspan></text>
+                    <text id="Sipariş_onaylansın" data-name="Sipariş onaylansın" transform="translate(1092.681 4416.136)" fontSize="18" fontFamily="OpenSans-Bold, Open Sans" fontWeight="700"><tspan x="-81.756" y="0">Sipariş onaylansın</tspan></text>
                     <g id="Group_310" data-name="Group 310" transform="translate(752.494 3579.077)">
                         <g id="Group_309" data-name="Group 309" clip-path="url(#clip-path)">
                             <path id="Path_652" data-name="Path 652" d="M83.106,66.1a4.329,4.329,0,0,1-3.625,3.046,1.309,1.309,0,0,1-1.537-1.692,1.349,1.349,0,0,1,1.232-.9,1.363,1.363,0,0,0,1.33-1.533q0-25.241,0-50.483c0-.08-.018-.161-.035-.308H2.6v.846q0,24.836,0,49.671c0,1.5.312,1.821,1.786,1.821H36.274c.27,0,.542-.015.811.009a1.283,1.283,0,0,1,.173,2.54,3.661,3.661,0,0,1-.888.047q-16.027,0-32.053,0C1.493,69.171,0,67.689,0,64.881Q0,34.567,0,4.253A3.863,3.863,0,0,1,4.236.026Q41.28.025,78.324,0c2.384,0,4.014.8,4.782,3.11Zm-2.6-54.571c0-2.367,0-4.687,0-7.007,0-1.592-.3-1.9-1.882-1.9H4.467a6.342,6.342,0,0,0-.73.01A1.112,1.112,0,0,0,2.623,3.72c-.037,2.589-.015,5.179-.015,7.81Z" transform="translate(0 0)" fill="#2db1a7" />
@@ -120,7 +120,7 @@ function PaymentSteps() {
                     <g id="Group_320" data-name="Group 320" transform="translate(917.986 4031.638)">
                         <g id="Group_319" data-name="Group 319" clip-path="url(#clip-path-6)">
                             <path id="Path_691" data-name="Path 691" d="M2.5,29.391c.077-2.442-.038-5.66.264-8.869a1.234,1.234,0,0,1,.945-1.241Q26.343,11,48.955,2.659a2.269,2.269,0,0,1,1.692.011q22.548,8.31,45.112,16.58a1.192,1.192,0,0,1,.976,1.213c.967,18.1-.57,35.907-6.3,53.2-3.514,10.61-8.726,20.266-16.709,28.235a53.317,53.317,0,0,1-23.013,13.525,3.373,3.373,0,0,1-1.986-.033c-15.119-4.443-26.112-13.946-33.685-27.615-5.318-9.6-8.377-19.977-10.3-30.723A149.5,149.5,0,0,1,2.5,29.391" transform="translate(-1.594 -1.594)" fill="#db0909" />
-                            <path id="Path_692" data-name="Path 692" d="M2.5,29.391c.077-2.442-.038-5.66.264-8.869a1.234,1.234,0,0,1,.945-1.241Q26.343,11,48.955,2.659a2.269,2.269,0,0,1,1.692.011q22.548,8.31,45.112,16.58a1.192,1.192,0,0,1,.976,1.213c.967,18.1-.57,35.907-6.3,53.2-3.514,10.61-8.726,20.266-16.709,28.235a53.317,53.317,0,0,1-23.013,13.525,3.373,3.373,0,0,1-1.986-.033c-15.119-4.443-26.112-13.946-33.685-27.615-5.318-9.6-8.377-19.977-10.3-30.723A149.5,149.5,0,0,1,2.5,29.391Z" transform="translate(-1.594 -1.594)" fill="none" stroke="#494949" stroke-width="5" />
+                            <path id="Path_692" data-name="Path 692" d="M2.5,29.391c.077-2.442-.038-5.66.264-8.869a1.234,1.234,0,0,1,.945-1.241Q26.343,11,48.955,2.659a2.269,2.269,0,0,1,1.692.011q22.548,8.31,45.112,16.58a1.192,1.192,0,0,1,.976,1.213c.967,18.1-.57,35.907-6.3,53.2-3.514,10.61-8.726,20.266-16.709,28.235a53.317,53.317,0,0,1-23.013,13.525,3.373,3.373,0,0,1-1.986-.033c-15.119-4.443-26.112-13.946-33.685-27.615-5.318-9.6-8.377-19.977-10.3-30.723A149.5,149.5,0,0,1,2.5,29.391Z" transform="translate(-1.594 -1.594)" fill="none" stroke="#494949" strokeWidth="5" />
                             <path id="Path_693" data-name="Path 693" d="M63.124,106.835A25.363,25.363,0,1,1,88.189,132.22a25.4,25.4,0,0,1-25.065-25.385M75.669,90.649,104.7,119.68A20.658,20.658,0,0,0,75.669,90.649m25.655,32.428L72.283,94.034a20.665,20.665,0,0,0,29.041,29.042" transform="translate(-40.24 -51.951)" fill="#fff" />
                         </g>
                     </g>

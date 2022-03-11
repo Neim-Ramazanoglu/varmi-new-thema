@@ -10,8 +10,8 @@ function Landing(props) {
             <img src={require('../../Assets/png/Oval.png')} className='oval-bg' />
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                 <img src={require('../../Assets/png/Group 325.png')} className='elipse-bg' />
-                <div style={{ position: 'absolute', marginTop: '15vmax', marginLeft: '30px', fontSize: '50px', fontWeight: 'bold' }}>Lorem Ipsum</div>
-                <img src={pin} style={{ width: '550px', position: 'absolute', marginTop: '13vmax', zIndex: '-1', marginLeft: '1vmax' }} />
+                <div style={{ position: 'absolute', marginTop: '15vmax', marginLeft: '30px', fontSize: '3vmax', fontWeight: 'bold' }}>Lorem Ipsum</div>
+                <img src={pin} style={{ width: '30vmax', position: 'absolute', marginTop: '13vmax', zIndex: '-1', marginLeft: '1vmax' }} />
             </div>
             <div className="flex-container space-between mt-1">
                 <img src={require('../../Assets/png/Group 159.png')} className='varmı-logo' />
@@ -55,7 +55,7 @@ function Landing(props) {
             </div>
             <LandingCard />
             <div className='margining'></div>
-            <img src={require('../../Assets/png/varb999e.png')} style={{ float: 'right', width: '25vmax', marginTop: 'inherit' }} className='d-none d-lg-block' />
+            <img src={require('../../Assets/png/varb999e.png')} className='varmı-icon d-none d-lg-block' />
             <PaymentSteps />
             <WhyVarmı />
             <Users />
