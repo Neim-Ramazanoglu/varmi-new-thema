@@ -1,10 +1,10 @@
 import React from 'react'
 import logo from '../Assets/png/Group 327.png'
-
+import green from '../Assets/svg/green-modern3.svg'
 function Footer() {
     return (
         <div className='footer'>
-            <div className="row">
+            {/* <div className="row">
                 <div className="col-sm-2 col-6 d-none d-xs-block d-sm-block d-md-block d-lg-block d-xl-block">
                     <img src={logo} />
                 </div>
@@ -16,7 +16,7 @@ function Footer() {
                     <span className='varben-text vertical-center'>5,342,216</span>
                     <span className='text-uppercase ps-2 fw-bold vertical-center'>Kullanıcı</span>
                 </div>
-            </div>
+            </div> */}
             <div className="row" style={{ marginTop: '1.5vw', height: '350px' }}>
                 <div className="col-md-3 col-6">
                     <span>
@@ -71,6 +71,44 @@ function Footer() {
                             <div className="search-footer-container">
                                 <input type="text" className="search-footer-box" placeholder="Mail Adresi" />
                                 <button className="search-footer-button">Kayıt Ol</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div className=" col-10  mt-5 ">
+                                <div className="row ">
+                                    <div className="col-5 ">
+                                        <div className="row landing-footer-card " style={{ backgroundColor: '#3AC6AD' }} >
+                                            <div className="col-6">
+                                                <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
+                                                    342,512
+                                                </div>
+                                                <div style={{ color: 'white', fontSize: '14px' }}>
+                                                    Varben
+                                                </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <img src={require('../Assets/png/varbe.png')} className='varbe-img-footer' />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-5 offset-1">
+                                        <div className="row landing-footer-card" style={{ backgroundColor: '#3AC6AD' }}>
+                                            <div className="col-6">
+                                                <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
+                                                    5,342,216
+                                                </div>
+                                                <div style={{ color: 'white', fontSize: '14px' }}>
+                                                    Kullanıcı
+                                                </div>
+                                            </div>
+                                            <div className="col-6">
+                                                <div className=''>
+                                                    <img src={green} className='varbe-img-footer2' />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </li>
                     </ul>

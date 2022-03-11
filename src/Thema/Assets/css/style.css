@@ -192,6 +192,7 @@ text-align: center;
      height: 0px; 
     display: flex;
     justify-content: center;
+    position: relative;
   }
   
   .p-card-img {
@@ -215,6 +216,38 @@ text-align: center;
   .right-rating{
     text-align: center;
   }
+  .middle-rating{
+    text-align: center;
+    color: #f5d757;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  [data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: 'Cevaplama Hızı';
+    background-color: #3AC6AD ;
+    color: #f5d757;
+    font-size: 100%;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid transparent;
+    z-index: 99999;
+    visibility: hidden;
+    border-radius: 25px;
+}
 
   .p-card-icons {
     position: absolute;
@@ -460,7 +493,7 @@ margin-top: 25px !important;
   padding: 5px 30px !important;
  }
  .search-wrapper-landing{
-   margin-top: 23vmax;
+   margin-top: 27vmax;
    justify-content: center;
    display: flex;
  }

@@ -7,7 +7,7 @@ import pin from '../../Assets/svg/pin.svg'
 import sen from '../../Assets/svg/SEN_BURADASIN6.svg'
 import sen1 from '../../Assets/svg/SEN_BURADASIN1.svg'
 
-function Landing(props) {
+function Landing() {
     return (
         <div>
             <img src={require('../../Assets/png/Oval.png')} className='oval-bg' />
@@ -16,12 +16,6 @@ function Landing(props) {
                 <img src={sen} style={{ marginTop: '13vmax', position: 'absolute', marginLeft: '1vmax', width: '19vmax' }} />
                 <img src={sen1} style={{ marginTop: '7vmax', position: 'absolute', marginLeft: '1vmax', width: '25vmax' }} />
                 <img src={pin} style={{ width: '30vmax', position: 'absolute', marginTop: '13vmax', zIndex: '-1', marginLeft: '1vmax' }} />
-            </div>
-            <div className="flex-container space-between mt-1">
-                <img src={require('../../Assets/png/Group 159.png')} className='varmı-logo' />
-                <button type="button" className="btn btn-success sign-button" onClick={props.onChange}>
-                    Kayıt Ol
-                </button>
             </div>
             <div className="search-wrapper-landing" >
                 <div className="landing-search">
@@ -32,7 +26,7 @@ function Landing(props) {
             <div className="flex-container space-between" style={{ marginTop: '22vmax' }}>
                 <div className='landing-text'>
                     <div style={{ fontWeight: 'bold', fontSize: '60px' }}>
-                        VARMI hayatınıza ne katar?
+                        VARMI Nasıl Çalışır?
                     </div>
                     <div className='card-sub-text col-lg-8 col-12'>
                         Şehirlerde birbirimize çok yakın mesafelerde yaşıyoruz değil mi ama yine de birbirimizi tanımıyoruz…

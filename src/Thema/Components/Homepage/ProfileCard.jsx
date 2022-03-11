@@ -41,6 +41,7 @@ function ProfileCard() {
                 <div className="col-xl-3 col-lg-4 col-md-6 col-12" key={profile.id}>
                     <div className="p-card-header">
                         <img className="p-card-img" alt="User image" src={require('../../Assets/png/1.png')} />
+                        <img src={verify} style={{ position: 'absolute', marginRight: '-5vmax', marginTop: '1.5vmax' }} />
                     </div>
                     <div className="p-card-body mt-2 pt-2">
                         <div className="container">
@@ -49,25 +50,19 @@ function ProfileCard() {
                                     <img src={stars} /><br />
                                     <span style={{ color: '#92929D', fontSize: '10px' }}>54 Yorum</span>
                                 </div>
-                                <div className="col-2 offset-1 right-rating" style={{ position: 'relative' }}>
-                                    <img className='flex-item' style={{ bottom: '0', position: 'absolute', left: '0' }} src={payment} />
-                                    <img className='flex-item' style={{ bottom: '0', position: 'absolute', right: 'auto', left: 'auto' }} src={verify} />
-                                    <img className='flex-item' style={{ bottom: '0', position: 'absolute', right: '0' }} src={certificate} />
+                                <div className="col-3  " style={{ position: 'relative' }}>
+                                    <span className='middle-rating' data-title="Cevaplama Hızı">10 dk</span>
                                 </div>
                                 <div className="col-4 offset-1 right-rating" style={{ marginTop: '1vmax' }}>
                                     <img src={location} className='mb-1' /><br />
                                     <span className='text-uppercase ' style={{ color: '#3ac6ad', fontSize: '1.2vmax', fontWeight: 'bold' }}> 620mt</span>
-
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>
-                                    <span style={{ color: '#92929D', fontSize: '11px' }}>Cevaplama Hızı</span><br />
-                                    <span style={{ color: '#f5d757', fontSize: '16px', fontWeight: 'bold' }}>10 dk</span>
-                                </div>
-                                <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>
-                                    <span style={{ color: 'black', fontSize: '20px', fontWeight: 'bold' }}>Mehmet</span><br />
-                                    <img src={truck} className='me-1' />
+
+                                <div className="col-8 right-rating" style={{ marginTop: '1vmax' }}>
+                                    <span style={{ color: 'black', fontSize: '20px', fontWeight: 'bold' }}>Mehmet Avcı</span><br />
+                                    <img src={certificate} />
                                     <span style={{ color: '#92929D', fontSize: '12px', fontWeight: '' }}>Taşıma&Kurye</span>
                                 </div>
                                 <div className="col-4 right-rating" style={{ marginTop: '1vmax' }}>

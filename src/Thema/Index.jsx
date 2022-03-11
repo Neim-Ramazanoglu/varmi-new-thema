@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
+import LandingHeader from './Components/Landing/LandingHeader';
 import Landing from './Components/Landing/Landing';
 import LandingFooter from './Components/Landing/LandingFooter';
 import Body from './Main/Body'
@@ -25,7 +26,8 @@ function Index() {
                     </Router>
                     :
                     <Router>
-                        <Landing onChange={onChange} />
+                        <LandingHeader onChange={onChange} />
+                        <Landing />
                         <LandingFooter />
                     </Router>
             }

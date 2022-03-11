@@ -8,7 +8,7 @@ function LandingFooter() {
 
             <div style={{ textAlign: 'center', color: 'white' }}>
                 <div className='fs-1 fw-bold'>
-                    Hemen Gönder!
+                    Hemen İndir!
                 </div>
                 <div className='mt-2 opacity-75 mb-5'>
                     Uygulamamıza App Store ve Play Store üzerinden ulaşabilir, VARMI ailesine katılabilirsin!

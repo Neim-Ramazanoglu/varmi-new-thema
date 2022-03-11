@@ -92,6 +92,9 @@ function LandingCard() {
                             </div>
                         </div>
                     </div>
+                    <div className="row">
+                        <button type="button" style={{ boxShadow: '0px 52px 54px #00000029' }} className="btn btn-light col-10 ms-2">Daha Fazla Hizmet İçin Tıklayın ..</button>
+                    </div>
                 </div>
                 <div className="col-lg-4 order-lg-2 col-xl-4 order-xl-2 col-12 order-1 " style={{ marginTop: '8vmax' }}>
                     <div style={{ color: 'white', fontSize: '2.5vmax', fontWeight: 'bold' }} className='green-card-text'>
@@ -105,7 +108,7 @@ function LandingCard() {
                     <button type="button" className="btn btn-outline-light mt-5">Detaylı Bilgi</button>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
