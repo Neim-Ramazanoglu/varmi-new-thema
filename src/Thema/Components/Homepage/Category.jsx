@@ -167,7 +167,7 @@ function Category() {
                             <div className="category-icon-wrapper" style={category.id === xid ? { background: 'white', boxShadow: '5px 5px 50px 3px rgba(0,0,0,0.18)' } : { fill: '#EBEBEB' }} >
                                 <div className="category-icon">
                                     {/* <div style={category.id === xid ? { fill: '#36C1A7' } : { fill: 'black' }} >{`$'../../Assets/png/category'/${category.icon}.png`}</div> */}
-                                    <img src={category.icon} style={{ width: '60px' }} />
+                                    <img src={category.icon} style={{ width: '90px' }} />
                                 </div>
                             </div>
                             <div className='category-name' style={category.id === xid ? { cursor: 'pointer', color: '#36C1A7' } : { cursor: 'pointer', color: '#7D7D7D' }} id={category.id} onClick={e => setXid(e.target.id)}>{category.name}</div>
