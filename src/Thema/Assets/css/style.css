@@ -466,7 +466,7 @@ margin-top: 25px !important;
  }
  .landing-search{
   width: 65%;
-  height: 8vmax;
+  /* height: 8vmax; */
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #62D6C4;
   border-radius: 35px;

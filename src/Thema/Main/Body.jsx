@@ -14,7 +14,7 @@ function Body() {
         <div>
             <Switch>
 
-                <Route path="/test" exact> <Homepage />  </Route>
+                <Route path="/web/bash" exact> <Homepage />  </Route>
 
 
             </Switch>
