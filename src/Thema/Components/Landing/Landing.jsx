@@ -4,13 +4,17 @@ import PaymentSteps from './PaymentSteps'
 import Users from './Users'
 import WhyVarmı from './WhyVarmı'
 import pin from '../../Assets/svg/pin.svg'
+import sen from '../../Assets/svg/SEN_BURADASIN6.svg'
+import sen1 from '../../Assets/svg/SEN_BURADASIN1.svg'
+
 function Landing(props) {
     return (
         <div>
             <img src={require('../../Assets/png/Oval.png')} className='oval-bg' />
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                 <img src={require('../../Assets/png/Group 325.png')} className='elipse-bg' />
-                <div style={{ position: 'absolute', marginTop: '15vmax', marginLeft: '30px', fontSize: '50px', fontWeight: 'bold' }}>Lorem Ipsum</div>
+                <img src={sen} style={{ marginTop: '13vmax', position: 'absolute', marginLeft: '1vmax', width: '19vmax' }} />
+                <img src={sen1} style={{ marginTop: '7vmax', position: 'absolute', marginLeft: '1vmax', width: '25vmax' }} />
                 <img src={pin} style={{ width: '30vmax', position: 'absolute', marginTop: '13vmax', zIndex: '-1', marginLeft: '1vmax' }} />
             </div>
             <div className="flex-container space-between mt-1">
