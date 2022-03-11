@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import styles from '../Assets/css/style.css'
 import { Link, withRouter } from 'react-router-dom';
 import OffcanvasMenu from 'react-offcanvas-menu-component';
-function Header({ location }) {
+
+
+function Header({ location, landing }) {
 
 
     const [toggle, setToggle] = useState(false)
@@ -90,7 +92,7 @@ function Header({ location }) {
                 <div className="float-end">
                     <button type="button" className="button " >Türkçe</button>
                     <button type="button" className="button  ms-3 me-3" >English</button>
-                    <button type="button" className="button me-3" >Giriş Yap</button>
+                    <button type="button" className="button me-3" onClick={landing} >Giriş Yap</button>
 
                 </div>
 

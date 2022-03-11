@@ -459,8 +459,10 @@ margin-top: 25px !important;
   margin-right: 3vmax !important;
   padding: 5px 30px !important;
  }
- .search-wrapper{
+ .search-wrapper-landing{
    margin-top: 23vmax;
+   justify-content: center;
+   display: flex;
  }
  .landing-search{
   width: 65%;
@@ -778,6 +780,8 @@ height: 15vmax;
   }
   .search-wrapper{
     margin-top: 18vmax;
+    justify-content: center;
+    display: flex;
   }
   .green-card{
     background-color: #33bea4;

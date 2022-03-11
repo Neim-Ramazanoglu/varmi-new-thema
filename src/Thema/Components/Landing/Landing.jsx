@@ -4,7 +4,7 @@ import PaymentSteps from './PaymentSteps'
 import Users from './Users'
 import WhyVarmı from './WhyVarmı'
 import pin from '../../Assets/svg/pin.svg'
-function Landing() {
+function Landing(props) {
     return (
         <div>
             <img src={require('../../Assets/png/Oval.png')} className='oval-bg' />
@@ -15,11 +15,11 @@ function Landing() {
             </div>
             <div className="flex-container space-between mt-1">
                 <img src={require('../../Assets/png/Group 159.png')} className='varmı-logo' />
-                <button type="button" className="btn btn-success sign-button" >
+                <button type="button" className="btn btn-success sign-button" onClick={props.onChange}>
                     Kayıt Ol
                 </button>
             </div>
-            <div className="search-wrapper" >
+            <div className="search-wrapper-landing" >
                 <div className="landing-search">
                     <img src={require('../../Assets/png/Icon feather-search.png')} style={{ width: '3vmax' }} />
                     <input className='landing-search-input' placeholder='Ara'></input>

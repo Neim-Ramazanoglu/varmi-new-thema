@@ -7,19 +7,25 @@ import Footer from './Main/Footer';
 import Header from './Main/Header'
 function Index() {
     const [state, setState] = useState("1")
+    function onChange() {
+        setState("0")
+    }
+    function landing() {
+        setState("1")
+    }
     return (
 
         <div>
             {
                 state === '0' ?
                     <Router>
-                        <Header />
+                        <Header landing={landing} />
                         <Body />
                         <Footer />
                     </Router>
                     :
                     <Router>
-                        <Landing />
+                        <Landing onChange={onChange} />
                         <LandingFooter />
                     </Router>
             }
