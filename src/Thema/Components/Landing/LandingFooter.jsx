@@ -118,9 +118,9 @@ function LandingFooter() {
                     </div>
                 </div>
             </div>
-            <div className="row ">
-                <div className='col-3 mb-3 mt-5'>
-                    <img src={logo} />
+            <div className="row px-3">
+                <div className='col-3 mb-3 mt-3' >
+                    <img src={logo} style={{ width: '7vmax' }} />
                 </div>
                 <div className="text-end col-9" style={{ margin: 'auto 0' }}>
                     <img className='px-2' src={require('../../Assets/png/facebook-white.png')} />

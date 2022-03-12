@@ -829,6 +829,20 @@ height: 15vmax;
     width: 40vmax;
   
   }
+  .search-footer-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border:none;
+    outline: 0;
+    width: 25%;
+    height: 45px;
+    background: #3AC6AD 0% 0% no-repeat padding-box;
+    border-radius: 0px 20px 20px 0px;
+    opacity: 1;
+    color:white;
+    font-size: 12px;
+  }
   .no-varben-text{
     text-align: center;
     color: white;
