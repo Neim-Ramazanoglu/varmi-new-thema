@@ -41,7 +41,7 @@ function ProfileCard() {
                 <div className="col-xl-3 col-lg-4 col-md-6 col-12" key={profile.id}>
                     <div className="p-card-header">
                         <div className='p-img-wrapper' >
-                            <img src={verify} style={{ position: 'absolute', width: '1vmax', right: '0', bottom: '0', marginRight: '0.5vmax' }} />
+                            <img src={verify} className='verify' />
                             <img className="p-card-img" alt="User image" src={require('../../Assets/png/1.png')} />
                         </div>
                     </div>

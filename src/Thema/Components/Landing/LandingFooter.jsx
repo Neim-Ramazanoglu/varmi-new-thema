@@ -14,8 +14,8 @@ function LandingFooter() {
                     Uygulamamıza App Store ve Play Store üzerinden ulaşabilir, VARMI ailesine katılabilirsin!
                 </div>
                 <div className="logos mt-3">
-                    <img src={require('../../Assets/png/Group 178.png')} className='px-3' />
-                    <img src={require('../../Assets/png/Group 180.png')} className='px-3' />
+                    <img src={require('../../Assets/png/Group 178.png')} className='px-3 mt-2' />
+                    <img src={require('../../Assets/png/Group 180.png')} className='px-3 mt-2' />
 
                 </div>
             </div>
