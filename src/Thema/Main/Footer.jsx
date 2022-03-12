@@ -68,7 +68,7 @@ function Footer() {
                             Mail bültenimize kayıt oldun, fırsatlardan ilk siz haberdar olun.
                         </li>
                         <li className='footer-list-item'>
-                            <div className="search-footer-container">
+                            <div className="search-footer-container col-9">
                                 <input type="text" className="search-footer-box" placeholder="Mail Adresi" />
                                 <button className="search-footer-button">Kayıt Ol</button>
                             </div>

@@ -3,7 +3,7 @@ import paymentSteps from '../../Assets/svg/odeme_admlari.svg'
 function PaymentSteps() {
     return (
         <div className='payment-steps '  >
-            <div style={{ fontSize: '2.5vmax', fontWeight: 'bold' }}>
+            <div style={{ fontSize: '3vmax', fontWeight: 'bold' }}>
                 Ödeme Adımları
             </div>
             <img src={paymentSteps} className='payment-svg' />

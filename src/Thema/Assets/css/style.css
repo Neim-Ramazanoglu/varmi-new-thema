@@ -194,13 +194,20 @@ text-align: center;
     justify-content: center;
     position: relative;
   }
+  .p-img-wrapper{
   
+    align-self: flex-end;
+    border-radius: 50%;
+    width: 100px; 
+    height: 100px;
+    transform: translateY(50%);
+  }
   .p-card-img {
     align-self: flex-end;
     border-radius: 50%;
     width: 100px; 
     height: 100px;
-    transform: translateY(50%); /* additional 50% of own height */
+    /* transform: translateY(50%);  */
   }
   .p-card-body{
       /* height: 300px; */
@@ -582,13 +589,12 @@ margin-bottom:20px;
   font-size: 0.7vmax;
 }
 .payment-svg{
-  width: 50vmax;
-  height: 40vmax;
+  width: 55vmax;
+  height: 30vmax;
 }
 .payment-steps{
-  margin-top:15vmax;
+  margin-top:18vmax;
   width: 500px;
-  height: 50vmax;
   margin-left: 15%;
 }
 .landing-text{
@@ -620,6 +626,7 @@ margin-bottom:20px;
   background-color: #EAF7F6;
   border-radius: 80% / 20% 0 0  0;
   padding-top: 50px;
+  padding-bottom: 5vmax;
 }
 .why-varmı-card{
 height: 120px;
@@ -918,7 +925,7 @@ height: 15vmax;
 .varmı-icon{
   float: right;
   width: 25vmax;
-  margin-top: inherit;
+  margin-top: -5vmax;
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .varmı-icon{

@@ -13,9 +13,9 @@ function Landing() {
             <img src={require('../../Assets/png/Oval.png')} className='oval-bg' />
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                 <img src={require('../../Assets/png/Group 325.png')} className='elipse-bg' />
-                <img src={sen} style={{ marginTop: '13vmax', position: 'absolute', marginLeft: '1vmax', width: '19vmax' }} />
-                <img src={sen1} style={{ marginTop: '7vmax', position: 'absolute', marginLeft: '1vmax', width: '25vmax' }} />
-                <img src={pin} style={{ width: '30vmax', position: 'absolute', marginTop: '13vmax', zIndex: '-1', marginLeft: '1vmax' }} />
+                <img src={pin} style={{ width: '20vmax', position: 'absolute', marginTop: '18vmax', zIndex: '-1', marginLeft: '1vmax' }} />
+                <div style={{ position: 'absolute', marginTop: '14vmax', marginLeft: '1.2vmax', fontSize: '3vmax', fontWeight: 'bold' }}>Sen Buradasın</div>
+                <div style={{ position: 'absolute', marginTop: '37.5vmax', marginLeft: '1.2vmax', fontSize: '3vmax', fontWeight: 'bold' }}>Aradığın Hizmetler Yanıbaşında</div>
             </div>
             <div className="search-wrapper-landing" >
                 <div className="landing-search">

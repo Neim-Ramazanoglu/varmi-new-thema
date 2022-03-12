@@ -19,7 +19,9 @@ function Header({ location, onChange }) {
 
 
             <div className='col-xs-4 col-lg-4 col-xl-4' style={{ textAlign: "center" }}>
-                <button type="button" className="btn btn-warning" >Hizmet Verenler</button>
+                <span style={{ fontSize: '13px', color: '#21947f', display: 'inline-block', backgroundColor: 'white', borderRadius: '1rem', padding: '0.5rem 1rem', cursor: 'pointer' }}>
+                    Hizmet Verenler
+                </span>
             </div>
             {/* <button className={"navbar-toggler " + (toggle === true ? 'collapsed' : '')} onClick={() => { setToggle(!toggle) }} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={(toggle === true ? 'true' : 'false')} aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -27,8 +29,8 @@ function Header({ location, onChange }) {
 
             <div className="col-xs-4 col-lg-4 col-xl-4 " >
                 <div className="float-end">
-                    <button type="button" className="btn btn-warning ms-3 me-3" >Kayıt Ol</button>
-                    <button type="button" className="btn btn-warning" onClick={onChange} >Giriş Yap</button>
+                    <button type="button" className="btn btn-light ms-3 me-3" style={{ fontSize: '13px', borderRadius: '25px' }}>Kayıt Ol</button>
+                    <button type="button" className="btn btn-light" style={{ fontSize: '13px', borderRadius: '25px' }} onClick={onChange} >Giriş Yap</button>
                 </div>
 
             </div>

@@ -40,8 +40,10 @@ function ProfileCard() {
             {List.map((profile, index) => (
                 <div className="col-xl-3 col-lg-4 col-md-6 col-12" key={profile.id}>
                     <div className="p-card-header">
-                        <img className="p-card-img" alt="User image" src={require('../../Assets/png/1.png')} />
-                        <img src={verify} style={{ position: 'absolute', marginRight: '-5vmax', marginTop: '1.5vmax' }} />
+                        <div className='p-img-wrapper' >
+                            <img src={verify} style={{ position: 'absolute', width: '1vmax', right: '0', bottom: '0', marginRight: '0.5vmax' }} />
+                            <img className="p-card-img" alt="User image" src={require('../../Assets/png/1.png')} />
+                        </div>
                     </div>
                     <div className="p-card-body mt-2 pt-2">
                         <div className="container">

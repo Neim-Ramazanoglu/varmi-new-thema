@@ -86,13 +86,10 @@ function WhyVarmı() {
                                     Güvenilir
                                 </div>
                                 <div className='why-varmı-text text-muted mt-2'>
-                                    Ayrıca hizmet ilanı vermek çok kolay.
+                                    Nazik ve saygılı insanları platformda barındırıyoruz!
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div style={{ color: '#34BEA5', marginTop: '15px', marginBottom: '15px' }} className='why-sub-text'>
-                        <span className='fw-bold '>Nazik ve saygılı</span> insanları platformda barındırıyoruz!
                     </div>
                 </div>
                 {/* <div className="col-4 d-none d-lg-block">
