@@ -13,9 +13,9 @@ function Landing() {
             <img src={require('../../Assets/png/Oval.png')} className='oval-bg' />
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}>
                 <img src={require('../../Assets/png/Group 325.png')} className='elipse-bg' />
-                <img src={pin} style={{ width: '20vmax', position: 'absolute', marginTop: '18vmax', zIndex: '-1', marginLeft: '1vmax' }} />
-                <div style={{ position: 'absolute', marginTop: '14vmax', marginLeft: '1.2vmax', fontSize: '3vmax', fontWeight: 'bold' }}>Sen Buradasın</div>
-                <div style={{ position: 'absolute', marginTop: '37.5vmax', marginLeft: '1.2vmax', fontSize: '3vmax', fontWeight: 'bold' }}>Aradığın Hizmetler Yanıbaşında</div>
+                <img src={pin} className='pin' />
+                <div className='upper-text'>Sen Buradasın</div>
+                <div className='lower-text'>Aradığın Hizmetler Yanıbaşında</div>
             </div>
             <div className="search-wrapper-landing" >
                 <div className="landing-search">
@@ -25,7 +25,7 @@ function Landing() {
             </div>
             <div className="flex-container space-between" style={{ marginTop: '22vmax' }}>
                 <div className='landing-text'>
-                    <div style={{ fontWeight: 'bold', fontSize: '60px' }}>
+                    <div className='how-varmı-works'>
                         VARMI Nasıl Çalışır?
                     </div>
                     <div className='card-sub-text col-lg-8 col-12'>

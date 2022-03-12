@@ -12,16 +12,16 @@ function WhyVarmı() {
                 <div className="col-md-5 col-12" style={{ margin: 'auto 0', textAlign: 'center' }}>
                     <img src={require('../../Assets/png/phone-play.png')} className='why-phone' />
                 </div>
-                <div className="col-md-3 " style={{ margin: 'auto 0', textAlign: 'center' }}>
+                <div className="col-md-3 col-12" style={{ margin: 'auto 0', textAlign: 'center' }}>
                     <div className="row">
-                        <div className="col-7 fw-bold why-header" style={{ margin: 'auto 0', textAlign: 'center', fontSize: '60px' }}>
+                        <div className="col-md-7 col-12 fw-bold why-header" >
                             Neden VARMI?
                         </div>
-                        <div className="col-3" style={{ lineHeight: '1.5' }}>
-                            <img src={deneme} style={{ width: '170px', transform: 'rotate(-45deg)', marginLeft: '-20px' }} />
-                            <img src={deneme} style={{ width: '170px', transform: 'rotate(-15deg)' }} />
-                            <img src={deneme} style={{ width: '170px', transform: 'rotate(15deg)' }} />
-                            <img src={deneme} style={{ width: '170px', transform: 'rotate(40deg)', marginLeft: '-15px' }} />
+                        <div className="col-3 d-none d-lg-block" style={{ lineHeight: '1.5' }}>
+                            <img src={deneme} style={{ width: '10vmax', transform: 'rotate(-45deg)', marginLeft: '-20px' }} />
+                            <img src={deneme} style={{ width: '10vmax', transform: 'rotate(-15deg)' }} />
+                            <img src={deneme} style={{ width: '10vmax', transform: 'rotate(15deg)' }} />
+                            <img src={deneme} style={{ width: '10vmax', transform: 'rotate(40deg)', marginLeft: '-15px' }} />
 
                         </div>
                     </div>
@@ -31,7 +31,7 @@ function WhyVarmı() {
                     {/* <div className=' fw-bold mb-5 fs-3 why-varmı-header' >
                         Neden VARMI?
                     </div> */}
-                    <div className='why-varmı-card col-9'>
+                    <div className='why-varmı-card col-md-9 col-11'>
                         <div className="row">
                             <div className='why-varmı-img-wrapper col-4'>
                                 <img src={dash} className='why-varmı-img' />
@@ -46,7 +46,7 @@ function WhyVarmı() {
                             </div>
                         </div>
                     </div>
-                    <div className='why-varmı-card col-9'>
+                    <div className='why-varmı-card col-md-9 col-11'>
                         <div className="row">
                             <div className='why-varmı-img-wrapper col-4'>
                                 <img src={plus} className='why-varmı-img' />
@@ -61,7 +61,7 @@ function WhyVarmı() {
                             </div>
                         </div>
                     </div>
-                    <div className='why-varmı-card col-9'>
+                    <div className='why-varmı-card col-md-9 col-11'>
                         <div className="row">
                             <div className='why-varmı-img-wrapper col-4'>
                                 <img src={verify} className='why-varmı-img' />
@@ -76,7 +76,7 @@ function WhyVarmı() {
                             </div>
                         </div>
                     </div>
-                    <div className='why-varmı-card col-9'>
+                    <div className='why-varmı-card col-md-9 col-11'>
                         <div className="row">
                             <div className='why-varmı-img-wrapper col-4'>
                                 <img src={avatar} className='why-varmı-img' />

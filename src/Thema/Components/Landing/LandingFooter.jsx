@@ -20,9 +20,8 @@ function LandingFooter() {
                 </div>
             </div>
             <div className='footer'>
-
-                <div className="row" style={{ marginTop: '4vw', height: '350px', color: 'white' }}>
-                    <div className="col-md-3 col-6">
+                <div className="row" style={{ marginTop: '4vw', color: 'white' }}>
+                    <div className="col-md-3 col-6 mt-5">
                         <span>
                             Üst Menü
                         </span>
@@ -44,7 +43,7 @@ function LandingFooter() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-md-3 col-6">
+                    <div className="col-md-3 col-6 mt-5">
                         <span>
                             Diğer Menü
                         </span>
@@ -63,7 +62,7 @@ function LandingFooter() {
                             </li>
                         </ul>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-12 mt-5">
                         <span>
                             Mail Bülteni
                         </span>
@@ -80,7 +79,7 @@ function LandingFooter() {
                             <li>
                                 <div className=" col-10  mt-5 ">
                                     <div className="row ">
-                                        <div className="col-5 ">
+                                        <div className="col-md-5 offset-md-0 col-10 offset-2">
                                             <div className="row landing-footer-card " >
                                                 <div className="col-6">
                                                     <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
@@ -95,7 +94,7 @@ function LandingFooter() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-5 offset-1">
+                                        <div className="col-md-5 offset-md-1 col-10 offset-2">
                                             <div className="row landing-footer-card" >
                                                 <div className="col-6">
                                                     <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
@@ -118,58 +117,24 @@ function LandingFooter() {
                         </ul>
                     </div>
                 </div>
-                {/* <div className="row mt-5">
-                    <div className="col-sm-2 col-6 d-none d-xs-block d-sm-block d-md-block d-lg-block d-xl-block">
-                        <img src={logo} />
-                    </div>
-                    <div className="col-sm-2 offset-sm-5 col-lg-2 offset-lg-4 col-6 offset-3 ">
-                        <div className="row landing-footer-card mb-5" >
-                            <div className="col-6">
-                                <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
-                                    342,512
-                                </div>
-                                <div style={{ color: 'grey', fontSize: '14px' }}>
-                                    Varben
-                                </div>
-                            </div>
-                            <div className="col-6">
-                                <img src={require('../../Assets/png/varbe.png')} className='varbe-img-footer' />
-                            </div>
-                        </div>
-                        <div className="row landing-footer-card" >
-                            <div className="col-6">
-                                <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
-                                    5,342,216
-                                </div>
-                                <div style={{ color: 'grey', fontSize: '14px' }}>
-                                    Kullanıcı
-                                </div>
-                            </div>
-                            <div className="col-6">
-                                <img src={require('../../Assets/png/varbe.png')} className='varbe-img-footer' />
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
-                <div className="row ">
-                    <div className='col-3 mb-3'>
-                        <img src={logo} />
-                    </div>
-                    <div className="text-end col-9" style={{ margin: 'auto 0' }}>
-                        <img className='px-2' src={require('../../Assets/png/facebook-white.png')} />
-                        <img className='px-2' src={require('../../Assets/png/instagram-white.png')} />
-                        <img className='px-2' src={require('../../Assets/png/twitter-white.png')} />
-                        <img className='px-2' src={require('../../Assets/png/youtube-white.png')} />
-                    </div>
+            </div>
+            <div className="row ">
+                <div className='col-3 mb-3 mt-5'>
+                    <img src={logo} />
                 </div>
-                <div style={{ borderBottom: '2px solid white', opacity: '0.3' }}></div>
-                <div className='row' style={{ height: '5vw', marginTop: '1vw' }}>
-                    <div className="col-6" style={{ color: 'white' }}>
-                        © 2022 <span style={{ color: 'white' }}>Varmı Ticaret A.Ş.</span> - Her Hakkı Saklıdır
-                    </div>
-                    <div className="col-6 text-end" style={{ color: 'white' }}>Dil: Türkçe</div>
+                <div className="text-end col-9" style={{ margin: 'auto 0' }}>
+                    <img className='px-2' src={require('../../Assets/png/facebook-white.png')} />
+                    <img className='px-2' src={require('../../Assets/png/instagram-white.png')} />
+                    <img className='px-2' src={require('../../Assets/png/twitter-white.png')} />
+                    <img className='px-2' src={require('../../Assets/png/youtube-white.png')} />
                 </div>
-
+            </div>
+            <div style={{ borderBottom: '2px solid white', opacity: '0.3' }}></div>
+            <div className='row' style={{ marginTop: '1vw' }}>
+                <div className="col-6" style={{ color: 'white' }}>
+                    © 2022 <span style={{ color: 'white' }}>Varmı Ticaret A.Ş.</span> - Her Hakkı Saklıdır
+                </div>
+                <div className="col-6 text-end" style={{ color: 'white' }}>Dil: Türkçe</div>
             </div>
         </div>
     )

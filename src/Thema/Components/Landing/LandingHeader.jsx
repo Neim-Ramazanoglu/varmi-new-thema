@@ -10,16 +10,14 @@ function Header({ location, onChange }) {
     const [toggle, setToggle] = useState(false)
 
     return (
-        <nav className=" navbar navbar-expand-lg navbar-light topbar px-5" style={{ height: '102px' }}>
-
-
+        <nav className=" navbar navbar-expand-lg navbar-light topbar px-5" >
             <div className="col-xs-4 col-lg-4 col-xl-4" >
-                <img src={require('../../Assets/png/varmı-logo.png')} />
+                <img src={require('../../Assets/png/varmı-logo.png')} className='landing-header-logo' />
             </div>
 
 
-            <div className='col-xs-4 col-lg-4 col-xl-4' style={{ textAlign: "center" }}>
-                <span style={{ fontSize: '13px', color: '#21947f', display: 'inline-block', backgroundColor: 'white', borderRadius: '1rem', padding: '0.5rem 1rem', cursor: 'pointer' }}>
+            <div className='col-xs-4 col-lg-4 col-xl-4 d-none d-md-block' style={{ textAlign: "center" }}>
+                <span style={{ fontSize: '1vmax', color: '#21947f', display: 'inline-block', backgroundColor: 'white', borderRadius: '1rem', padding: '0.5rem 1rem', cursor: 'pointer' }}>
                     Hizmet Verenler
                 </span>
             </div>
@@ -29,8 +27,8 @@ function Header({ location, onChange }) {
 
             <div className="col-xs-4 col-lg-4 col-xl-4 " >
                 <div className="float-end">
-                    <button type="button" className="btn btn-light ms-3 me-3" style={{ fontSize: '13px', borderRadius: '25px' }}>Kayıt Ol</button>
-                    <button type="button" className="btn btn-light" style={{ fontSize: '13px', borderRadius: '25px' }} onClick={onChange} >Giriş Yap</button>
+                    <button type="button" className="btn btn-light ms-3 me-3" style={{ fontSize: '1vmax', borderRadius: '25px' }}>Kayıt Ol</button>
+                    <button type="button" className="btn btn-light" style={{ fontSize: '1vmax', borderRadius: '25px' }} onClick={onChange} >Giriş Yap</button>
                 </div>
 
             </div>
