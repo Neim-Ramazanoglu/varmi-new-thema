@@ -27,7 +27,7 @@ function Index() {
                     :
                     <Router>
                         <LandingHeader onChange={onChange} />
-                        {/* <Landing /> */}
+                        <Landing />
                         <LandingFooter />
                     </Router>
             }
