@@ -9,10 +9,10 @@ function WhyVarmı() {
     return (
         <div className='why-varmı'>
             <div className="row ">
-                <div className="col-md-5 col-12" style={{ margin: 'auto 0', textAlign: 'center' }}>
+                <div className="col-xl-5 col-12" style={{ margin: 'auto 0', textAlign: 'center' }}>
                     <img src={require('../../Assets/png/phone-play.png')} className='why-phone' />
                 </div>
-                <div className="col-md-3 col-12" style={{ margin: 'auto 0', textAlign: 'center' }}>
+                <div className="col-xl-3 col-md-6 col-12" style={{ margin: 'auto 0', textAlign: 'center' }}>
                     <div className="row">
                         <div className="col-md-7 col-12 fw-bold why-header" >
                             Neden VARMI?
@@ -27,7 +27,7 @@ function WhyVarmı() {
                     </div>
                 </div>
 
-                <div className="col-md-4 col-12" style={{ margin: 'auto ' }} >
+                <div className="col-md-6 col-xl-4 col-12" style={{ margin: 'auto ' }} >
                     {/* <div className=' fw-bold mb-5 fs-3 why-varmı-header' >
                         Neden VARMI?
                     </div> */}

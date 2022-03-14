@@ -1049,7 +1049,17 @@ height: 15vmax;
   width: 25vmax;
   margin-top: -5vmax;
 }
+.varben-stat-num{
+  font-size: 24px;
+  color:rgb(246, 208, 88);
+  font-weight: bold;
+}
+.varben-stat-name{
+  color: grey;
+  font-size: 14px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+  
   .varmı-icon{
     float: right;
     width: 25vmax;
@@ -1094,6 +1104,40 @@ height: 15vmax;
     .why-phone{
       width: 34vmax;
     }
+    .varben-stat-num{
+      font-size: 16px;
+      color:rgb(246, 208, 88);
+      font-weight: bold;
+    }
+    .varben-stat-name{
+      color: grey;
+      font-size: 10px;
+    }
+    .search-footer-button{
+      font-size: 12px;
+      width: 35%;
+    }
+    .varbe-img-footer{
+      width: 5vmax;
+      position: absolute;
+      margin-top: -1vmax;
+      margin-left:0.5vmax;
+      -webkit-filter: drop-shadow(10px 10px 10px #22222237);
+      filter: drop-shadow(10px 10px 10px #22222251)
+    }
+    .varbe-img-footer2{
+      width: 9vmax;
+      position: absolute;
+      margin-top: -1vmax;
+      -webkit-filter: drop-shadow(10px 10px 10px #22222237);
+      filter: drop-shadow(10px 10px 10px #22222251)
+    }
+    .verify{
+      position: absolute;
+      width: 1.5vmax;
+      right: 0.7vmax;
+      bottom: 0.5vmax;
+    }
 }
 
 
@@ -1117,4 +1161,5 @@ height: 15vmax;
   margin-top: 20px;
   height: 20vmax;
   }
+
 }

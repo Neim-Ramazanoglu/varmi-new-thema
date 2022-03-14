@@ -82,10 +82,10 @@ function LandingFooter() {
                                         <div className="col-md-5 offset-md-0 col-10 offset-2">
                                             <div className="row landing-footer-card " >
                                                 <div className="col-6">
-                                                    <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
+                                                    <div className='varben-stat-num'>
                                                         342,512
                                                     </div>
-                                                    <div style={{ color: 'grey', fontSize: '14px' }}>
+                                                    <div className='varben-stat-name'>
                                                         Varben
                                                     </div>
                                                 </div>
@@ -97,10 +97,10 @@ function LandingFooter() {
                                         <div className="col-md-5 offset-md-1 col-10 offset-2">
                                             <div className="row landing-footer-card" >
                                                 <div className="col-6">
-                                                    <div style={{ color: 'rgb(246, 208, 88)', fontSize: '24px', fontWeight: 'bold' }}>
+                                                    <div className='varben-stat-num'>
                                                         5,342,216
                                                     </div>
-                                                    <div style={{ color: 'grey', fontSize: '14px' }}>
+                                                    <div className='varben-stat-name'>
                                                         Kullanıcı
                                                     </div>
                                                 </div>
