@@ -13,10 +13,13 @@ function LandingFooter() {
                 <div className='mt-2 opacity-75 mb-5'>
                     Uygulamamıza App Store ve Play Store üzerinden ulaşabilir, VARMI ailesine katılabilirsin!
                 </div>
-                <div className="logos mt-3">
-                    <img src={require('../../Assets/png/Group 178.png')} className='px-3 mt-2' />
-                    <img src={require('../../Assets/png/Group 180.png')} className='px-3 mt-2' />
-
+                <div className="row mt-3">
+                    <div className='px-3 mt-2 col-md-3 offset-md-3 offset-0 logo-left col-12'>
+                        <img src={require('../../Assets/png/Group 178.png')} />
+                    </div>
+                    <div className='px-3 mt-2 col-md-3 logo-right col-12'>
+                        <img src={require('../../Assets/png/Group 180.png')} />
+                    </div>
                 </div>
             </div>
             <div className='footer'>
@@ -77,7 +80,7 @@ function LandingFooter() {
                                 </div>
                             </li>
                             <li>
-                                <div className=" col-10  mt-5 ">
+                                <div className=" col-8  mt-5 ">
                                     <div className="row ">
                                         <div className="col-md-5 offset-md-0 col-10 offset-2">
                                             <div className="row landing-footer-card " >

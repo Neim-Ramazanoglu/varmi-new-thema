@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import styles from '../Assets/css/style.css'
-import { Link, withRouter } from 'react-router-dom';
-import OffcanvasMenu from 'react-offcanvas-menu-component';
 
 
 function Header({ location, landing }) {
@@ -10,34 +7,61 @@ function Header({ location, landing }) {
     const [toggle, setToggle] = useState(false)
     return (
         <nav className=" navbar sticky-top navbar-expand-lg navbar-light topbar " style={{ height: '102px' }}>
-            <div className='of col-xs-1'>
-                <OffcanvasMenu
-                    Link={Link}
-                    location={location}
-                    config={{
-                        push: false,
-                    }}
-                    menu={[
-                        { text: 'Ana Sayfa', link: '/' },
-                        { text: 'Mesjalar', link: '/1' },
-                        { text: 'Profil', link: '/2' },
-                        { text: 'Varmı Nedir?', link: '/3' },
-                        { text: 'Kategoriler', link: '/4' },
-                        { text: 'Arama', link: '/5' },
-                        { text: 'Bize Ulaşın', link: '/6' },
-                    ]}
-                    header={ // you can add logo to the header for example
-                        <img src={require('../Assets/png/varmı-logo.png')} />
-                    }
-                />
-
+            <div className="offcanvas offcanvas-start w-25 d-lg-none " tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="false">
+                <div className="offcanvas-header" style={{ backgroundColor: '#3AC6AD' }}>
+                    <h6 className="offcanvas-title d-none d-sm-block" id="offcanvas"></h6>
+                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div className="offcanvas-body px-0" style={{ backgroundColor: '#3AC6AD' }}>
+                    <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                        <li className="nav-item">
+                            <a href="#" className="nav-link text-truncate">
+                                <span className="text-uppercase" href="#">ana sayfa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" className="nav-link text-truncate">
+                                <span className="text-uppercase" href="#">mesajlar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="nav-link text-truncate">
+                                <span className="text-uppercase" href="#">profil</span>
+                            </a>
+                        </li>
+                        <li className="nav-item">
+                            <a href="#" className="nav-link text-truncate">
+                                <span className="text-uppercase" href="#">varmı nedir?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#submenu1" data-bs-toggle="collapse" className="nav-link text-truncate">
+                                <span className="text-uppercase" href="#">kategoriler</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="nav-link text-truncate">
+                                <span className="text-uppercase" href="#">arama</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="nav-link text-truncate">
+                                <span className="text-uppercase" href="#">bize ulaşın</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
+
+            <div className='of col-xs-1'>
+                <button className="btn float-end" style={{ border: 'none', color: 'white' }} data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                    Menu
+                </button>
+            </div>
             <div className="col-xs-3 col-lg-1 col-xl-1 me-5" style={{ marginLeft: '3.5%' }}>
                 <img src={require('../Assets/png/varmı-logo.png')} />
             </div>
-
-
             <div className='col-xs-4 col-md-4 col-lg-4 col-xl-3 content2'>
                 <span href="#" style={{ display: 'inline-block', overflow: 'hidden', whiteSpace: 'nowrap' }}>
                     <img src={require('../Assets/png/archive.png')} style={{ height: '22.5px', width: '27.5px' }} />
@@ -60,6 +84,7 @@ function Header({ location, landing }) {
                     </svg>
                 </a>
             </div>
+
             {/* <button className={"navbar-toggler " + (toggle === true ? 'collapsed' : '')} onClick={() => { setToggle(!toggle) }} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded={(toggle === true ? 'true' : 'false')} aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button> */}

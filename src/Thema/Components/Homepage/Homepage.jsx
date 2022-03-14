@@ -5,9 +5,7 @@ import NoVarben from './NoVarben'
 import ProfileCard from './ProfileCard'
 function Homepage() {
     return (
-
         <div className='main'>
-
             <div className="search-wrapper">
                 <div className="search-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1.46vw" height="1.46vw" viewBox="0 0 28.207 28.207">
